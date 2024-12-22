@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router'
 
 </script>
 
@@ -8,7 +7,7 @@ import { RouterLink } from 'vue-router'
 
   <NavbarComponent class="mb-10"></NavbarComponent>
 
-
+<!-- explain about me -->
   <main class="mt-32 grid grid-cols-2 gap-10 items-center">
     <!-- image -->
      <div class="relative">
@@ -35,27 +34,30 @@ import { RouterLink } from 'vue-router'
       In addition to web development, I also have experience in mobile development, UI/UX, and design. I believe that hard work and dedication are the keys to achieving great things. I enjoy sharing ideas and connecting with others who share the same passion. Feel free to reach out to me through my social media!"</p>
       <div class="mt-3 flex gap-4">
         <div class="w-9">
-          <RouterLink>
+          <a href="https://www.instagram.com/jonatan_sim/">
             <img src="@/assets/img/sosmed/instagram.png" alt="instagram icon" class="grayscale hover:grayscale-0 transition-all ease-in duration-100">
-          </RouterLink>
+          </a>
         </div>
         <div class="w-9">
-          <RouterLink>
+          <a href="https://www.linkedin.com/in/jonatan-simbolon-79615827b/">
             <img src="@/assets/img/sosmed/linkedin.png" alt="instagram icon" class="grayscale hover:grayscale-0 transition-all ease-in duration-100">
-          </RouterLink>
+          </a>
         </div>
         <div class="w-9">
-          <RouterLink>
+          <a href="https://github.com/Jooooo05">
             <img src="@/assets/img/sosmed/github.png" alt="instagram icon" class="grayscale hover:grayscale-0 transition-all ease-in duration-100">
-          </RouterLink>
+          </a>
         </div>
         <div class="w-9">
-          <RouterLink>
+          <a href="mailto:jonatanhudson.s@gmail.com">
             <img src="@/assets/img/sosmed/gmail.png" alt="instagram icon" class="grayscale hover:grayscale-0 transition-all ease-in duration-100">
-          </RouterLink>
+          </a>
         </div>
       </div>
     </div>
     <!-- explain about me -->
   </main>
+<!-- explain about me -->
+
+<!--  -->
 </template>
