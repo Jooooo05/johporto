@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router'
 
     <div class="mt-16 text-center">
       <h1 class="poppins-regular tracking-widest">Yonatan Hidson Simbolon</h1>
-      <p class="poppins mt-4">Hi 👋 i'm an aspiring full-stack developer at the beginning of my journey. In addition, I have experience in mobile development, UI/UX, and desing. I'm deeply passionate about web development and always eager to improve my skills. I believe that every line of code is an opportunity to grow and create something meaningful. While I’m still learning, I’m driven by a strong determination to keep growing, evolving, and delivering my best in every project I take on.</p>
+      <p class="poppins mt-4">Hi 👋 i'm an aspiring full-stack developer at the beginning of my journey. In addition, I have experience in mobile development, UI/UX, and design. I'm deeply passionate about web development and always eager to improve my skills. I believe that every line of code is an opportunity to grow and create something meaningful. While I’m still learning, I’m driven by a strong determination to keep growing, evolving, and delivering my best in every project I take on.</p>
       <h3 class="mochiy text-3xl text-slate-800 mt-5">"Your Friendly Beginner Full-Stack Developer"</h3>
     </div>
   </main>
