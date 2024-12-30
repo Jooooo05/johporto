@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
       <div class="absolute bottom-10">
         <span class="mochiy text-5xl">FULLSTACK DEVELOPER</span>
         <div class="flex justify-center gap-10 pt-5">
-          <button class="box-border px-9 py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Download CV</button>
+          <a href="../../public/Yonatan-CV.pdf" download="Yonatan-CV.pdf" class="box-border px-9 py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Download CV</a>
           <RouterLink class="px-9 py-3 rounded-xl shadow-md border-2 border-slate-600 hover:bg-slate-600 hover:text-white transition-all ease-in" to="">Contact Me</RouterLink>
         </div>
       </div>
