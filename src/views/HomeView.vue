@@ -55,4 +55,26 @@ import { RouterLink } from 'vue-router'
    </main>
   <!-- about me -->
 
+  <!-- my project -->
+   <main class="mt-48 h-[600px]">
+     <div class="grid grid-cols-2 gap-5 items-center">
+      <!-- image -->
+      <div class="flex justify-center">
+        <img class="w-3/4" src="@/assets/img/recentproject/2.png" alt="About Me Image">
+      </div>
+      <!-- image -->
+
+      <!-- slogan -->
+      <div class="flex flex-col justify-center">
+        <h1 class="mochiy text-7xl">My Project</h1>
+        <p class="poppins text-lg mt-5 border-b-2 border-slate-800">List of my projects that I have done and currently working on.</p>
+        <RouterLink to="/project" class="mt-10 text-center box-border w-[200px] px-9 py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Read More</RouterLink>
+      </div>
+      <!-- slogan -->
+
+
+    </div>
+   </main>
+  <!-- my project -->
+
 </template>
