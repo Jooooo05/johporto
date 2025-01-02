@@ -1,27 +1,34 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <!-- <header>
 
-    <div class="wrapper">
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header> -->
-
-  <div class="container-app">
+  <div class="container-app px-3">
     <RouterView />
   </div>
 </template>
 
 <style>
-.container-app{
-  width: 65%;
-  margin: auto;
+.container-app {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container-app {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container-app {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container-app {
+    width: 65%;
+    margin: auto;
+  }
 }
 
 .poppins {
