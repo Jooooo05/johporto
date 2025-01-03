@@ -297,7 +297,7 @@
 
       <!-- certificate -->
         <div class="mt-14">
-          <div class="flex flex-wrap gap-5 ">
+          <div class="flex justify-center md:justify-normal flex-wrap gap-5 ">
 
             <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
               <img src="@/assets/img/certificate_porto/BelajarDasarAi.png" alt="">

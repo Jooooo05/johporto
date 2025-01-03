@@ -41,7 +41,7 @@ import { RouterLink } from 'vue-router'
         <h1 class="mochiy text-5xl md:text-7xl">About ME</h1>
         <p class="poppins text-lg mt-5 ">A brief introduction about me and my interest.</p>
         <span class="md:w-[420px] border-b-2 border-slate-800"></span>
-        <RouterLink to="/about" class="self-end mt-10 text-center box-border w-[200px] px-9 py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Read More</RouterLink>
+        <RouterLink to="/about" class="self-end md:self-start mt-10 text-center box-border w-[200px] px-9 py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Read More</RouterLink>
       </div>
       <!-- slogan -->
 
