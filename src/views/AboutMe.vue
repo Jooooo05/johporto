@@ -8,19 +8,19 @@
   <NavbarComponent class="mb-10"></NavbarComponent>
 
   <!-- explain about me -->
-  <main class="mt-32 grid grid-cols-2 gap-10 items-center">
+  <main class="mt-32 md:grid grid-cols-2 gap-10 items-center">
     <!-- image -->
       <div class="relative">
 
-      <div class="">
+      <div class="w-[300px] m-auto md:w-auto">
         <img src="@/assets/img/about/about-1.png" alt="center image" class="grayscale hover:grayscale-0 transition-all ease-in duration-300">
       </div>
 
-      <div class="w-[200px] absolute -top-14 right-0">
+      <div class="w-[120px] md:w-[150px] lg:w-[200px] absolute -top-14 right-0">
         <img src="@/assets/img/about/about-2.png" alt="second image" class="grayscale hover:grayscale-0 transition-all ease-in duration-300">
       </div>
 
-      <div class="w-[250px] absolute -bottom-20 -left-20">
+      <div class="w-[160px] md:w-[190px] lg:w-[250px] absolute -bottom-10 md:-bottom-14 lg:-bottom-20 md:-left-10 lg:-left-20">
         <img src="@/assets/img/about/about-3.png" alt="second image" class="grayscale hover:grayscale-0 transition-all ease-in duration-300">
       </div>
 
@@ -28,7 +28,7 @@
     <!-- image -->
 
     <!-- explain about me -->
-    <div class="">
+    <div class="mt-20 md:mt-0">
       <h1 class="poppins-regular tracking-widest text-lg">YONATAN HIDSON SIMBOLON</h1>
       <p class="poppins">"Hello, I’m Yonatan, a web developer with a strong passion for learning and growing in the field of technology. I’m currently studying Informatics Engineering at Universitas Advent Indonesia. My journey to this point has been full of challenges, but I’ve embraced every step as an opportunity to learn and move closer to my goals.
       In addition to web development, I also have experience in mobile development, UI/UX, and design. I believe that hard work and dedication are the keys to achieving great things. I enjoy sharing ideas and connecting with others who share the same passion. Feel free to reach out to me through my social media!"</p>
@@ -72,7 +72,7 @@
     <!-- tools -->
     <div class="mt-8 relative">
       <!-- tools pertama -->
-      <div class="grid grid-cols-5 gap-3 mt-4 relative">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4 relative">
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/html.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">HTML</p>
@@ -98,7 +98,7 @@
       <!-- tools pertama -->
 
       <!-- tools kedua -->
-      <div class="grid grid-cols-5 gap-3 mt-4 relative left-10">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4 relative md:left-10">
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/php.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">PHP</p>
@@ -123,7 +123,7 @@
       <!-- tools kedua -->
 
       <!-- tools ketiga -->
-      <div class="grid grid-cols-5 gap-3 mt-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/git.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">Git</p>
@@ -148,7 +148,7 @@
       </div>
       <!-- tools ketiga -->
 
-      <div class="grid grid-cols-5 gap-3 mt-4 relative left-10">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4 relative md:left-10">
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/wordpress.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">wordpress</p>
@@ -217,9 +217,9 @@
 
       <!-- history education -->
        <div class="mt-16">
-        <div class="flex justify-center gap-2">
+        <div class="flex flex-col md:flex-row justify-center gap-2">
           <!-- left container -->
-           <div class="w-1/2">
+           <div class="w-full md:w-1/2">
             <div class="">
               <h3 class="poppins-semibold text-sm">2021 - Present</h3>
               <h1 class="mochiy text-xl">Universitas Advent Indonesia</h1>
@@ -239,7 +239,7 @@
           <!-- left container -->
 
           <!-- right container -->
-           <div class="w-1/2">
+           <div class="w-full md:w-1/2">
             <div class="text-center">
               <h1 class="mochiy text-xl">Achievements</h1>
               <h3 class="poppins-semibold text-sm">Some of my achievements during my study.</h3>
