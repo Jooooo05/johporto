@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router'
         <h1 class="mochiy text-3xl sm:text-4xl md:text-5xl text-center">FULLSTACK DEVELOPER</h1>
         <div class="flex justify-center gap-6 sm:gap-10 pt-5">
           <a href="../../public/Yonatan-CV.pdf" download="Yonatan-CV.pdf" class=" box-border px-5 py-3 text-sm sm:text-base sm:px-9 sm:py-3 bg-slate-600 rounded-xl text-white shadow-md hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">Download CV</a>
-          <RouterLink class="px-5 py-3 sm:px-9 sm:py-3 text-sm sm:text-base rounded-xl shadow-md border-2 border-slate-600 hover:bg-slate-600 hover:text-white transition-all ease-in" to="">Contact Me</RouterLink>
+          <a href="mailto:jonatanhudson.s@gmail.com" class="px-5 py-3 sm:px-9 sm:py-3 text-sm sm:text-base rounded-xl shadow-md border-2 border-slate-600 hover:bg-slate-600 hover:text-white transition-all ease-in">Contact Me</a>
         </div>
       </div>
 
