@@ -103,7 +103,10 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">E-msaec Virtual Learning Environment</h1>
-              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500">Lorem</p>
+              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center">E-MSAEC is an interactive platform for medical-surgical nursing. As a backend developer, I used Laravel to build scalable APIs and integrate them with a React.js frontend for a responsive user experience.</p>
+              <div class="mt-5">
+                <a href="https://e-msaec.com/" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">e-msaeac.com</a>
+              </div>
             </div>
         </div>
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/3.png')] bg-cover bg-center relative">
@@ -111,7 +114,10 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">E-Consultation</h1>
-              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500">Lorem</p>
+              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 text-center">E-Consultation is a web-based platform enabling real-time consultations between Seventh-day Adventist Church members and pastors. I developed the project independently, using Vue.js for the frontend, Laravel for the backend, and Firebase for seamless live communication, ensuring responsive design and secure functionality.</p>
+              <div class="mt-5">
+                <a href="https://github.com/Jooooo05/e-consultation-fe" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
+              </div>
             </div>
         </div>
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/4.png')] bg-cover bg-center relative">
@@ -119,7 +125,10 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Teman Tani</h1>
-              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500">Lorem</p>
+              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 text-center">Teman Tani is a smart farming mobile application developed as a capstone project for Bangkit Academy 2024. As a Mobile Developer, I built the app using Kotlin, integrating cloud-based APIs and a machine learning model to provide predictive insights like crop recommendations and pest detection, supporting sustainable farming practices.</p>
+              <div class="mt-5">
+                <a href="https://github.com/Jooooo05/TemanTani" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
+              </div>
             </div>
         </div>
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/5.png')] bg-cover bg-center relative">
@@ -127,7 +136,7 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Storry Apps</h1>
-              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500">Lorem</p>
+              <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 text-center">storry app is an application that I made to complete the final project of the Intermediate Android Application Development course.</p>
             </div>
         </div>
       </div>

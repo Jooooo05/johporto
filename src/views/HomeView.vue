@@ -46,8 +46,8 @@ import { RouterLink } from 'vue-router'
       <!-- slogan -->
 
       <!-- image -->
-      <div class="flex justify-center">
-        <img class="w-3/4" src="@/assets/img/pp-porto-1.png" alt="About Me Image">
+      <div class="flex justify-center items-center">
+        <img class="w-3/4 rounded-xl grayscale hover:grayscale-0 transition-all ease-in duration-100" src="@/assets/img/about.png" alt="About Me Image">
       </div>
       <!-- image -->
 
