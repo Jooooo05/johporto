@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.4",
+    "motion": "^11.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
