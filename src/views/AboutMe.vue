@@ -190,7 +190,7 @@
       <h3 class="poppins-semibold text-sm">Agu 2023 - Feb 2024</h3>
       <h1 class="mochiy text-xl">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h1>
       <p class="poppins">Mobile Development Cohort Bangkit Academy 2024</p>
-      <p class="mt-3 poppins text-sm ">became an IT verse mentor teaching in the advanced web programming class, the things taught were css3, Bootsrapt tailwindcss, and responsive web concepts.</p>
+      <p class="mt-3 poppins text-sm ">As a Mobile Development Cohort Trainee at Bangkit Academy 2024, a program led by Google, Gojek, Traveloka, and Dicoding in Bandung, INA (Feb 2024 – Jul 2024), I participated in an intensive training focused on mobile application development. I gained expertise in modern technologies such as Kotlin/Java for Android development and Jetpack Compose. As part of the program, I collaborated with a team to successfully complete a capstone project that involved research, design, and implementation of a real-world solution, showcasing my ability to apply technical skills in practical scenarios.</p>
      </div>
 
      <div class="mt-8 pt-3 border-t border-gray-200">
