@@ -11,7 +11,7 @@
 
   function openAudystorry() {
     countOpen.value++;
-    if (countOpen.value == 5){
+    if (countOpen.value == 21){
       isAudyStorryOpen.value = true;
     }
   }
