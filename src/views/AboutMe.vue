@@ -177,13 +177,14 @@ const certificates = [
           <p class="poppins-semibold text-sm">VueJs</p>
         </div>
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
+          <img src="@/assets/img/skill_logo/react.png" alt="htmlicon" class="w-10">
+          <p class="poppins-semibold text-sm">React</p>
+        </div>
+        <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/mysql.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">MySQL</p>
         </div>
-        <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
-          <img src="@/assets/img/skill_logo/firebase.png" alt="htmlicon" class="w-10">
-          <p class="poppins-semibold text-sm">Firebase</p>
-        </div>
+
       </div>
       <!-- tools kedua -->
 
@@ -206,8 +207,8 @@ const certificates = [
           <p class="poppins-semibold text-sm">VisualSc</p>
         </div>
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
-          <img src="@/assets/img/skill_logo/dbeaver.png" alt="htmlicon" class="w-10">
-          <p class="poppins-semibold text-sm">Dbeaver</p>
+          <img src="@/assets/img/skill_logo/firebase.png" alt="htmlicon" class="w-10">
+          <p class="poppins-semibold text-sm">Firebase</p>
         </div>
 
       </div>
@@ -217,6 +218,10 @@ const certificates = [
         <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
           <img src="@/assets/img/skill_logo/wordpress.png" alt="htmlicon" class="w-10">
           <p class="poppins-semibold text-sm">wordpress</p>
+        </div>
+        <div class="flex justify-center items-center gap-3 shadow-xl rounded-full border py-1">
+          <img src="@/assets/img/skill_logo/dbeaver.png" alt="htmlicon" class="w-10">
+          <p class="poppins-semibold text-sm">Dbeaver</p>
         </div>
       </div>
     </div>

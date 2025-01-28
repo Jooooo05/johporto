@@ -99,6 +99,33 @@ import { RouterLink } from 'vue-router';
      <div class="pb-20">
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4  mt-10">
+        <!-- NoteApss -->
+
+
+        <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/7.png')] bg-cover bg-center relative">
+            <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2025</span>
+            <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
+              <!-- Konten yang ingin hilang saat hover -->
+              <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Personal Website</h1>
+              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center">Portfolio Website adalah proyek pribadi yang saya kembangkan menggunakan Vue.js 3 dan TailwindCSS untuk tampilan yang modern dan responsif. Saya juga memanfaatkan Typed.js untuk efek teks dinamis serta Framer Motion untuk animasi scroll yang halus dan interaktif. Website ini dirancang sebagai wadah untuk menampilkan pengalaman, proyek, dan keterampilan saya dalam pengembangan web. 🔥</p>
+              <div class="mt-5">
+                <a href="https://github.com/Jooooo05/johporto" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/6.png')] bg-cover bg-center relative">
+            <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2025</span>
+            <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
+              <!-- Konten yang ingin hilang saat hover -->
+              <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">NoteApps</h1>
+              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center">NoteApps adalah aplikasi pencatatan yang saya kembangkan saat mengikuti IDCamp 2024 - React Developer Path. Dibangun dengan React dan TailwindCSS, aplikasi ini memungkinkan pengguna untuk menambah, mengedit, menghapus, serta mengarsipkan catatan dengan mudah. Dengan tampilan minimalis dan responsif, NoteApps menjadi pengalaman berharga bagi saya dalam memahami React dan styling modern. 🚀</p>
+              <div class="mt-5">
+                <a href="https://github.com/Jooooo05/notesApp" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
+              </div>
+            </div>
+        </div>
+
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/2.png')] bg-cover bg-center relative">
             <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2024</span>
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
@@ -110,6 +137,7 @@ import { RouterLink } from 'vue-router';
               </div>
             </div>
         </div>
+
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/3.png')] bg-cover bg-center relative">
           <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2024</span>
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
@@ -121,6 +149,7 @@ import { RouterLink } from 'vue-router';
               </div>
             </div>
         </div>
+
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/4.png')] bg-cover bg-center relative">
           <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2024</span>
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
@@ -132,11 +161,12 @@ import { RouterLink } from 'vue-router';
               </div>
             </div>
         </div>
+
         <div class="w-full h-[350px] bg-[url('@/assets/img/recentproject/5.png')] bg-cover bg-center relative">
           <span class="absolute top-0 left-0 poppins-medium text-lg tracking-widest p-2 bg-slate-700 text-white ">2024</span>
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
-              <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Storry Apps</h1>
+              <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Story Apps</h1>
               <p class="poppins text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 text-center">storry app is an application that I made to complete the final project of the Intermediate Android Application Development course.</p>
             </div>
         </div>
