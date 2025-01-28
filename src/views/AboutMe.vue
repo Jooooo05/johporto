@@ -1,6 +1,71 @@
 <script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+
+// const currentIndex = ref(0);
+//const interval = ref(null);// Jumlah item yang terlihat dalam satu waktu
+
+const certificates = [
+  { title: 'Belajar Dasar AI', provider: 'Dicoding', image:  'certificate_porto/BelajarDasarAi.png', link: '#' },
+  { title: 'Belajar Git & GitHub', provider: 'Dicoding', image: 'certificate_porto/BelajarDasarGitDenganGithub.png', link: '#' },
+  { title: 'Belajar JavaScript', provider: 'Dicoding', image: 'certificate_porto/BelajarDasarPemogramanJavascript.png', link: '#' },
+  { title: 'Belajar Dasar Pemograman Web | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/BelajarDasarPemogramanWeb.png', link: '#' },
+  { title: 'Belajar Funda Aplikasi Android | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/BelajarFundamentalAplikasiAndroid.png', link: '#' },
+  { title: 'Belajar Membuat Aplikasi Android Untuk Pemula | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/BelajarMembuatAplikasiAndroidUntukPemula.png', link: '#' },
+  { title: 'Belajar Prinsip Pemograman SOLID | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/BelajarPrinsipPemogramanSOLID.png', link: '#' },
+  { title: 'Memulai Dasar Pemograman Untuk Menjadi Pengembang Software | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/MemulaiDasarPemogramanUntukMenjadiPengembangSoftware.png', link: '#' },
+  { title: 'Memulai Pemograman dengan Kotlin | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/MemulaiPemogramandenganKotlin.png', link: '#' },
+  { title: 'Pengenalan ke Logika ProgramingLogic 101 | Appril 2024', provider: 'Dicoding', image: 'certificate_porto/PengenalankeLogikaPemograman(ProgramingLogic101).png', link: '#' },
+  { title: 'Certficate Vice Head ITverse | Appril 2024', provider: 'Hima Fakultas Teknologi Informasi', image: 'certificate_porto/CertificateViceHeadITverse.png', link: '#' },
+  { title: 'Certificate Bangkit Academy | Appril 2024', provider: 'Msib Study Independent', image: 'certificate_porto/CertificateBangkit.png', link: '#' },
+  { title: 'Certificate English Bangkit | Appril 2024', provider: 'Msib Study Independent', image: 'certificate_porto/CertificateEnglishBangkit.png', link: '#' },
+  { title: 'Certificate Kepersetaan Msib | Appril 2024', provider: 'Msib Study Independent', image: 'certificate_porto/CertificateKepersetaanMsib.png', link: '#' },
+  { title: 'Certificate The Best GPA from Fakultas | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/CertificateTheBestGPAfromFakultas.png', link: '#' },
+  { title: 'Certificate Highest GPA from Universitas | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/HighestGPAfromUniversitas.png', link: '#' },
+  { title: 'Certificate Wining UNEC logo contest | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/WinningUNEClogocontest.png.png', link: '#' },
+];
+
+    const currentIndex = ref(0);
+    const visibleItems = ref(4); // Jumlah item yang terlihat dalam satu tampilan
+    const totalItems = computed(() => certificates.length);
+
+    // Fungsi untuk menentukan jumlah item yang terlihat berdasarkan ukuran layar
+    const updateVisibleItems = () => {
+      if (window.innerWidth >= 1636) {
+        visibleItems.value = 8; // Large Desktop
+      }else if (window.innerWidth >= 1300) {
+        visibleItems.value = 7; // Desktop
+      } else if (window.innerWidth >= 768) {
+        visibleItems.value = 6; // Tablet
+      }
+      else {
+        visibleItems.value = 4; // Mobile
+      }
+    };
+
+    // Panggil fungsi saat komponen dimuat
+    onMounted(() => {
+      updateVisibleItems();
+      window.addEventListener("resize", updateVisibleItems);
+    });
+
+    // Hapus event listener saat komponen dihancurkan
+    onUnmounted(() => {
+      window.removeEventListener("resize", updateVisibleItems);
+    });
+
+    const nextSlide = () => {
+      currentIndex.value = (currentIndex.value + 1) % (totalItems.value - visibleItems.value + 1);
+    };
+
+    const prevSlide = () => {
+      currentIndex.value = (currentIndex.value - 1 + (totalItems.value - visibleItems.value + 1)) % (totalItems.value - visibleItems.value + 1);
+    };
+
+
 
 </script>
+
+
 
 
 <template>
@@ -60,7 +125,7 @@
   <!-- explain about me -->
 
   <!-- skill -->
-  <main class="mt-48 ">
+  <main  class="mt-48 ">
 
     <!-- title -->
     <div class="flex justify-center items-center gap-3">
@@ -204,7 +269,7 @@
  <!-- profesional experience -->
 
   <!-- education -->
-   <main class="mt-48 mb-14">
+   <main  class="mt-48 mb-14">
       <!-- title -->
       <div class="text-center">
         <div class="flex justify-center items-center gap-3">
@@ -287,7 +352,7 @@
   <!-- education -->
 
    <!-- my certification -->
-    <main class="mt-48 mb-14">
+    <main  class="mt-48 mb-14">
       <!-- title -->
         <div class="flex justify-start items-center gap-3">
           <box-icon name='certification' type="solid" size="lg"></box-icon>
@@ -296,159 +361,47 @@
       <!-- title -->
 
       <!-- certificate -->
-        <div class="mt-14">
-          <div class="flex justify-center md:justify-normal flex-wrap gap-5 ">
-
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarDasarAi.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Dasar Ai | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
+      <div class="relative overflow-hidden w-full mx-auto mt-10">
+        <!-- Carousel Container -->
+        <div
+          class="flex transition-transform duration-500 ease-in-out"
+          :style="{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)`, width: `${100 * totalItems / visibleItems}%` }"
+        >
+          <div
+            v-for="(certificate, index) in certificates"
+            :key="index"
+            class="p-3 flex-shrink-0"
+            :style="{ width: `${100 / visibleItems}%` }"
+          >
+            <div class="bg-gray-100 w-[280px] h-[320px] rounded-xl shadow-xl transition-transform duration-300 hover:scale-105 mx-auto">
+              <img :src="certificate.image" :alt="certificate.title" class="w-full h-[200px] object-cover rounded-t-xl">
+              <div class="mt-2 p-3">
+              <a :href="certificate.link" target="_blank" class="poppins text-xs border-b border-black">See Certificate</a>
+              <p class="poppins text-xs">{{ certificate.title }}</p>
+              <p class="text-sm text-slate-800 font-bold">{{ certificate.provider }}</p>
               </div>
             </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarDasarGitDenganGithub.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Dasar Git Dengan Github | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarDasarPemogramanJavascript.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Dasar Pemograman Javascript | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarDasarPemogramanWeb.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Dasar Pemograman Web | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarFundamentalAplikasiAndroid.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Funda Aplikasi Android | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarMembuatAplikasiAndroidUntukPemula.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Membuat Aplikasi Android Untuk Pemula | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarPenerapanMachineLearninguntukAndroid.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Penerapan Machine Learning untuk Android | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/BelajarPrinsipPemogramanSOLID.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Belajar Prinsip Pemograman SOLID | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/MemulaiDasarPemogramanUntukMenjadiPengembangSoftware.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Memulai Dasar Pemograman Untuk Menjadi Pengembang Software | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/MemulaiPemogramandenganKotlin.png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Memulai Pemograman dengan Kotlin | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/PengenalankeLogikaPemograman(ProgramingLogic101).png" alt="">
-              <div class="mt-2">
-              <a href="" class="poppins text-xs border-b border-black">see certificate</a>
-              <p class="poppins text-sm">Pengenalan ke Logika Pemograman(ProgramingLogic101) | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Dicoding</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateViceHeadITverse.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certficate Vice Head ITverse | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Hima Fakultas Teknologi Informasi</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateBangkit.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate Bangkit Academy | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Msib Study Independent</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateEnglishBangkit.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate English Bangkit | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Msib Study Independent</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateKepersetaanMsib.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate Kepersetaan Msib | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Msib Study Independent</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateTheBestGPAfromFakultas.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate The Best GPA from Fakultas | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Universitas Advent Indonesia</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/CertificateTheBestGPAfromFakultas.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate The Best GPA from Fakultas | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Universitas Advent Indonesia</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/HighestGPAfromUniversitas.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate Highest GPA from Universitas | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Universitas Advent Indonesia</p>
-              </div>
-            </div>
-            <div class="bg-gray-100 w-[280px] box-border p-3 rounded-xl shadow-xl bg-transparent transform transition-transform duration-300 hover:scale-105">
-              <img src="@/assets/img/certificate_porto/WinningUNEClogocontest.png" alt="">
-              <div class="mt-2">
-              <p class="poppins text-sm">Certificate Wining UNEC logo contest | Appril 2024</p>
-              <p class="text-sm text-slate-800 font-bold ">Universitas Advent Indonesia</p>
-              </div>
-            </div>
-
           </div>
         </div>
 
+        <!-- Navigation Buttons -->
+        <button
+          @click="prevSlide"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full">
+          ‹
+        </button>
+        <button
+          @click="nextSlide"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full">
+          ›
+        </button>
+      </div>
       <!-- certificate -->
 
     </main>
    <!-- my certification -->
 </template>
+
+<style scoped>
+
+</style>
