@@ -21,7 +21,7 @@ const certificates = [
   { title: 'Certificate Kepersetaan Msib | Appril 2024', provider: 'Msib Study Independent', image: 'certificate_porto/CertificateKepersetaanMsib.png', link: '#' },
   { title: 'Certificate The Best GPA from Fakultas | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/CertificateTheBestGPAfromFakultas.png', link: '#' },
   { title: 'Certificate Highest GPA from Universitas | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/HighestGPAfromUniversitas.png', link: '#' },
-  { title: 'Certificate Wining UNEC logo contest | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/WinningUNEClogocontest.png.png', link: '#' },
+  { title: 'Certificate Wining UNEC logo contest | Appril 2024', provider: 'Universitas Advent Indonesia', image: 'certificate_porto/WinningUNEClogocontest.png', link: '#' },
 ];
 
     const currentIndex = ref(0);

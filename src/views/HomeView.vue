@@ -15,11 +15,11 @@ let animateMyProject;
 onMounted(() => {
 
   stopScrollAnimation = scroll(
-    animate(container.value, { opacity: [.3, 1], transform: ["translateX(-20%)", "translateX(0)"]}, { duration: 0.3, ease: "easeInOut" })
+    animate(container.value, { transform: ["translateX(-20%)", "translateX(0)"]}, { duration: 0.3, ease: "easeInOut" })
   )
 
   animateMyProject = scroll(
-    animate(myProject.value, { opacity: [.3, 1], transform: ["translateX(20%)", "translateX(0)"] })
+    animate(myProject.value, { transform: ["translateX(20%)", "translateX(0)"] })
   )
 
   // Infinite loop example

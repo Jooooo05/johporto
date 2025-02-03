@@ -107,7 +107,7 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">Personal Website</h1>
-              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center">Portfolio Website adalah proyek pribadi yang saya kembangkan menggunakan Vue.js 3 dan TailwindCSS untuk tampilan yang modern dan responsif. Saya juga memanfaatkan Typed.js untuk efek teks dinamis serta Framer Motion untuk animasi scroll yang halus dan interaktif. Website ini dirancang sebagai wadah untuk menampilkan pengalaman, proyek, dan keterampilan saya dalam pengembangan web. 🔥</p>
+              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center text-sm lg:text-base">Portfolio Website adalah proyek pribadi yang saya kembangkan menggunakan Vue.js 3 dan TailwindCSS. Saya juga memanfaatkan Typed.js untuk efek teks dinamis serta Framer Motion untuk animasi scroll yang halus dan interaktif. Website ini dirancang sebagai wadah untuk menampilkan pengalaman, proyek, dan keterampilan saya dalam pengembangan web. 🔥</p>
               <div class="mt-5">
                 <a href="https://github.com/Jooooo05/johporto" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
               </div>
@@ -119,7 +119,7 @@ import { RouterLink } from 'vue-router';
             <div class="group w-full h-full bg-slate-400 bg-opacity-75 hover:bg-opacity-0 ease-in-out duration-500 flex flex-col justify-center items-center">
               <!-- Konten yang ingin hilang saat hover -->
               <h1 class="poppins-semibold text-xl tracking-widest text-slate-900 group-hover:opacity-0 transition-opacity duration-500 text-center">NoteApps</h1>
-              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center">NoteApps adalah aplikasi pencatatan yang saya kembangkan saat mengikuti IDCamp 2024 - React Developer Path. Dibangun dengan React dan TailwindCSS, aplikasi ini memungkinkan pengguna untuk menambah, mengedit, menghapus, serta mengarsipkan catatan dengan mudah. Dengan tampilan minimalis dan responsif, NoteApps menjadi pengalaman berharga bagi saya dalam memahami React dan styling modern. 🚀</p>
+              <p class="text-slate-900 mt-2 group-hover:opacity-0 transition-opacity duration-500 w-3/4 poppins text-center text-sm lg:text-base">NoteApps adalah aplikasi pencatatan yang saya kembangkan saat mengikuti IDCamp 2024 - React Developer Path. Dibangun dengan React dan TailwindCSS, aplikasi ini memungkinkan pengguna untuk menambah, mengedit, menghapus, serta mengarsipkan catatan dengan mudah. Dengan tampilan minimalis dan responsif, NoteApps menjadi pengalaman berharga bagi saya dalam memahami React dan styling modern. 🚀</p>
               <div class="mt-5">
                 <a href="https://github.com/Jooooo05/notesApp" class="px-4 py-3 poppins text-sm text-white rounded-md bg-slate-700 hover:bg-white hover:border-2 hover:border-slate-600 hover:text-slate-800 transition-all ease-in">github</a>
               </div>
