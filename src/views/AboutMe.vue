@@ -242,6 +242,12 @@ const certificates = [
 
     <!-- history experience -->
      <div class="mt-14 pt-3 border-t border-gray-200">
+      <h3 class="poppins-semibold text-sm">Appril 2025 - Oct 2025</h3>
+      <h1 class="mochiy text-xl">Smartindo</h1>
+      <p class="poppins">Intern Frontend Developer</p>
+      <p class="mt-3 poppins text-sm ">Improve, help build interfaces for internal company system projects consisting of Warehouse, Purchase, Sales, Finance, Hr.</p>
+     </div>
+     <div class="mt-14 pt-3 border-t border-gray-200">
       <h3 class="poppins-semibold text-sm">Agu 2024 - Dec 2024</h3>
       <h1 class="mochiy text-xl">Universitas Advent Indonesia</h1>
       <p class="poppins">Assistant Lecturer</p>
@@ -318,28 +324,36 @@ const certificates = [
             <div class="mt-7">
 
               <div class="flex justify-start items-center gap-3">
-                <box-icon name='medal' size="lg"></box-icon>
+                <div class="">
+                  <box-icon name='medal' size="lg"></box-icon>
+                </div>
                 <div class="">
                   <p class="poppins text-base">Out Standing</p>
                   <p class="poppins text-sm">Academic Achievement Award in the 7th semester of my studies at UNAI</p>
                 </div>
               </div>
               <div class="flex justify-start items-center gap-3 mt-3">
-                <box-icon name='medal' size="lg"></box-icon>
+                <div class="">
+                  <box-icon name='medal' size="lg"></box-icon>
+                </div>
                 <div class="">
                   <p class="poppins text-base">Winning UNEC Logo Competition</p>
                   <p class="poppins text-sm">Won the Unai English Club (UNEC) logo syambara</p>
                 </div>
               </div>
               <div class="flex justify-start items-center gap-3 mt-3">
-                <box-icon name='medal' size="lg"></box-icon>
+                <div class="">
+                  <box-icon name='medal' size="lg"></box-icon>
+                </div>
                 <div class="">
                   <p class="poppins text-base">Out Standing</p>
                   <p class="poppins text-sm">Academic Achievement Award in the 5th semester of my studies at UNAI</p>
                 </div>
               </div>
               <div class="flex justify-start items-center gap-3 mt-3">
-                <box-icon name='medal' size="lg"></box-icon>
+                <div class="">
+                  <box-icon name='medal' size="lg"></box-icon>
+                </div>
                 <div class="">
                   <p class="poppins text-base">3rd place CyberCup</p>
                   <p class="poppins text-sm">3rd place in the cybercup competition held by HIMA FTI</p>
@@ -347,6 +361,7 @@ const certificates = [
               </div>
 
             </div>
+
            </div>
         </div>
         <!-- right container -->
