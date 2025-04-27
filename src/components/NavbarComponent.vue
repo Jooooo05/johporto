@@ -23,7 +23,8 @@
     <main class="flex justify-between items-center ">
 
       <div class="poppins relative z-50">
-        <p @click="openAudystorry" class="text-base font-medium">Yonatan's</p>
+        <!-- <p @click="openAudystorry" class="text-base font-medium">Yonatan's</p> -->
+        <p class="text-base font-medium">Yonatan's</p>
         <p class="text-sm">Web Developer</p>
       </div>
 
