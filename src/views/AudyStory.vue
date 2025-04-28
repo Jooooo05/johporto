@@ -18,7 +18,7 @@ const hideCardHandler = () => {
 
 <template>
   <!-- card image untuk di baca -->
-  <div v-if="showCard" class="fixed inset-0 bg-black/80 z-[9999] overflow-hidden">
+  <div @click="hideCardHandler" v-if="showCard" class="fixed inset-0 bg-black/80 z-[9999] overflow-hidden">
     <div @click="hideCardHandler" class="absolute top-7 right-[600px] cursor-pointer">
       <box-icon name="x" color="white" size="md"></box-icon>
     </div>
@@ -875,9 +875,9 @@ const hideCardHandler = () => {
   <!-- our daily life -->
   <main class="mt-20">
     <!-- title -->
-    <div class="relative pt-5">
+    <div class="relative pt-5 mb-12">
       <h1 class="poppins-medium tracking-widest text-3xl">Our Daily Life</h1>
-      <p class="mt-1 poppins text-sm">Keseharian</p>
+      <p class="mt-1 poppins text-sm">Ini aku mau ceritain sebagian kecil keseharian kami, lucu lucu!! kalo gambarnya kurang keliatan bisa di klick yaa!!</p>
     </div>
     <!-- title -->
 
@@ -888,11 +888,11 @@ const hideCardHandler = () => {
         class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2"
       ></div>
 
-      <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
+      <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between ">
         <div class="relative w-full h-full">
           <div
             @click="showCardHandler(1, 1)"
-            class="absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/1.png"
@@ -902,7 +902,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 2)"
-            class="absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/2.png"
@@ -912,7 +912,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 3)"
-            class="absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/3.png"
@@ -922,7 +922,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 4)"
-            class="absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/4.png"
@@ -932,7 +932,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 5)"
-            class="absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/5.png"
@@ -942,14 +942,16 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2">
+          <p class="mt-1 poppins text-sm text-center">Lucuu inget banget moment ini dia bilang kalo misalnya aku lgi deketin dia trus dia bete karena aku marah, pdhlmah salting banget gais aku</p>
+        </div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
         <div class="relative w-full h-full">
           <div
             @click="showCardHandler(1, 6)"
-            class="absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/6.png"
@@ -959,7 +961,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 7)"
-            class="absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/7.png"
@@ -969,7 +971,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 8)"
-            class="absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/8.png"
@@ -979,7 +981,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(1, 9)"
-            class="absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily1/9.png"
@@ -989,7 +991,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Ini juga lucu banget baca gehh heheh</div>
       </div>
     </div>
 
@@ -1003,7 +1005,7 @@ const hideCardHandler = () => {
         <div class="relative w-full h-full">
           <div
             @click="showCardHandler(2, 1)"
-            class="absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/1.jpg"
@@ -1013,7 +1015,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 2)"
-            class="absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/2.jpg"
@@ -1023,7 +1025,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 3)"
-            class="absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/3.jpg"
@@ -1033,7 +1035,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 4)"
-            class="absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/4.jpg"
@@ -1043,7 +1045,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 5)"
-            class="absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/5.jpg"
@@ -1053,14 +1055,14 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Ini dia lagi cerita ke mamamnya kalo dia kesal sama mentornya di tempat magang</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
         <div class="relative w-full h-full">
           <div
             @click="showCardHandler(2, 6)"
-            class="absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/6.jpg"
@@ -1070,7 +1072,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 7)"
-            class="absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[15%] transform -rotate-3 -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/7.jpg"
@@ -1080,7 +1082,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 8)"
-            class="absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/8.jpg"
@@ -1090,7 +1092,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 9)"
-            class="absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[50%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/9.jpg"
@@ -1100,7 +1102,7 @@ const hideCardHandler = () => {
           </div>
           <div
             @click="showCardHandler(2, 10)"
-            class="absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200 cursor-pointer"
           >
             <img
               src="@/assets/story_audy/our_daily/daily2/10.jpg"
@@ -1110,7 +1112,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Ini aku janji kedia ngebuat bunga ke dia, aku happy banget dia suka sama buatan aku 🥰</div>
       </div>
     </div>
 
@@ -1174,7 +1176,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Ih degdegan banget ges di moment ini sumpa, iya sih salah aku responnya kyk ga peduli bgt..so sourryy</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
@@ -1231,7 +1233,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Gemesss amatt ini dia,,bete katanya aku sibuk poll cuma telat bales 3mnt nying</div>
       </div>
     </div>
 
@@ -1295,7 +1297,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Hahaha gataula hari hari gelut bete berantemm mulu, tpi ngangenin bgtt yaaah... :(</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
@@ -1352,7 +1354,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">wkwkw lucu rencana mau ke bekasi buat berenang bareng ka jisa ka jina malah masuk tol mbz ngakak woee!</div>
       </div>
     </div>
 
@@ -1416,7 +1418,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">ini agak kumpulan ceritanya agak random sih heheh tpi lucu lucu ko baca ajaa</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
@@ -1473,7 +1475,7 @@ const hideCardHandler = () => {
           </div>
         </div>
 
-        <div class="mt-2">Hellow</div>
+        <div class="mt-2 poppins text-sm text-center">Another pembicaraan lucu, dan seperti biasa ciri khas ngambekny betenya ituu ngangenin :(</div>
       </div>
     </div>
 
@@ -1597,19 +1599,28 @@ const hideCardHandler = () => {
       <div class="w-1/2 h-full">
         <div class="relative shadow-2xl">
           <div
-            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[20%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/storry3.png"
+              src="@/assets/story_audy/continue_story2/firstdate2.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div
-            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[55%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/5.png"
+              src="@/assets/story_audy/continue_story2/firstdate1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/firstdate3.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1630,18 +1641,18 @@ const hideCardHandler = () => {
       <div class="w-1/2 h-full flex items-center">
         <div class="w-full bg-white shadow-lg p-8 rounded-xl">
           <h3 class="mochiy tracking-widest text-xl">Main ke aeon mall cakung☺️</h3>
-          <p class="poppins text-sm tracking-wider mt-1">Tanggalnya lupa hehe</p>
+          <p class="poppins text-sm tracking-wider mt-1">19 Desember 2024</p>
           <p class="poppins text-sm mt-1">
             kami ketemu di stasiun cakung, aku jalan dari rumah jam 11/12 deh kalo gasalah nah kalau dia itu kan masih ada magang msib dari pagi sampai siang pulangnya dia otw ke stasiun cakung inget banget waktu itu ujan deh kalo gasalah wkwkwk, kami mesen grab car dari stasiun sampai mall aeonnya sampai mallnya kami makan di food court ayam apa lupa hehhe, cerita cerita banyak abis itu kami kami naik biang lala sumpaa seruu bangettttttt sekali lagi pake bangett!! wkwk, kami naik di biang lala itu sambil ngobrolin banyak hal, truss foto foto lucu amatt pokoknya,
           </p>
           <p class="poppins text-sm mt-1">
-            setelah selesai main biang lala jam berapa ya 3/4 sore gitu kami mutusin buat nongs lagi makan mochi sambil ngobrol ngobrol lagi hehhe cerita random yang terlintas di pikiran kami..kami ceritain semua sampai ga berasa udah mulai malem aja....rasanya bahagia banget...gimana yaa jelasinnyaaa...pengennya waktu berenti disitu ajaaa...pengennya rasa, perasaan, waktu, moment, rasanyaman, bahagianya semuanya...selamanya berhenti......🥰🥰🥰🥰🥰
+            setelah selesai main biang lala jam berapa ya 3/4 sore gitu kami mutusin buat nongs lagi makan mochi sambil ngobrol ngobrol lagi hehhe cerita random yang terlintas di pikiran kami..kami ceritain semua sampai ga berasa udah mulai malem aja....rasanya bahagia banget...gimana yaa jelasinnyaaa...pengennya waktu berenti disitu ajaaa...rasa, perasaan, waktu, moment, rasanyaman, bahagianya semuanya...selamanya berhenti....aku ngelihat dunia dengan warna yang beda saati ituu🥰🥰🥰🥰🥰
           </p>
         </div>
       </div>
 
       <div class="w-1/2">
-        <div class="relative shadow-2xl">
+        <!-- <div class="relative shadow-2xl">
           <div
             class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
           >
@@ -1669,6 +1680,26 @@ const hideCardHandler = () => {
               class="w-full h-full object-cover rounded-xl"
             />
           </div>
+        </div> -->
+        <div class="relative shadow-2xl">
+          <div
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[20%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/aeon-cakung1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[55%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/aeon-cakung2.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -1684,7 +1715,7 @@ const hideCardHandler = () => {
 
       <div class="w-1/2 h-full bg-white shadow-lg p-8 rounded-xl">
         <h3 class="mochiy tracking-widest text-xl">Temenin dia ke kampusnya</h3>
-        <p class="poppins text-sm tracking-wider mt-1">31 December</p>
+        <p class="poppins text-sm tracking-wider mt-1">24 December 2024</p>
 
         <p class="poppins text-sm mt-1">
           Jadi dia itu ados matkul apa gitu lupa deh nah dia disuruh untuk ngurus tandatangan buat jam jerka kah lupa deh pokoknya ngurus dokument dan perlu tanda tangan supaya gajinya masuk nah itu terakhir di urus tanggal 31 desember, tbtb dia bilang mau ga temenin dia ke kampusnya, aku lagsung nyautla bilang mau mau mauuuuuuuuuuu wkwkw lucu banget wkwkwk excited banget akunya disitu, ketemuannya di stasiun bekasi timur soalnya dia lagi di bekasi di tempat ka jisa dari bekasi ke stasiun manggarai padahal kami berangkatnya agak siangan tapi ttp aja rame ga dpt tempat duduk wkwk abis itu transit ke arah bogor turunnya di stasiun ui truss lanjut naik buss di ui kampusnya sampai ke fakultasnyaaaa hehehe abis dia ke fotocopy buat print sesuatu dulu trus dia ngurus berkasnya/documnet dll aku nunggu di luar,,sambil nunggu aku liat liat kampusya tpi aku kepanasan banget itu wkwk soalnya aku pake sweater salah aku juga sih kenapa pake sweater pdhl lgi panas banget
@@ -1701,19 +1732,28 @@ const hideCardHandler = () => {
       <div class="w-1/2 h-full">
         <div class="relative shadow-2xl">
           <div
-            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[20%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/storry3.png"
+              src="@/assets/story_audy/continue_story2/kampus1.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div
-            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[55%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/5.png"
+              src="@/assets/story_audy/continue_story2/kampus2.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/kampus3.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1736,7 +1776,7 @@ const hideCardHandler = () => {
           <h3 class="mochiy tracking-widest text-xl">Cekcok antara kami</h3>
           <!-- <p class="poppins text-sm tracking-wider mt-1">Tanggalnya lupa hehe</p> -->
           <p class="poppins text-sm mt-1">
-            Disini aku ga bakalan cerita panjang lebar sih, jadi di third nya itu dia bilang kalau kisah asmaranya dia yahh pas aku denger kisah cinta dia aku ngerasa aneh dan juga jealous yah perasaan aku ganyaman lah intinya...pdhal disitu gua udah kecintaan banget gais wkwkw. yahh tapi gua ga cari pembelaan setelah sampai stastiun akhir jatimulya kami pisah dia pesen gojeknya sendiri aku juga pesen gojek aku sendiri disitu aku diem banget dia chat kalo gasalah "hatihati di jalan, aku sudah sampai rumah yaa" tapi aku gada balas chat dia...yahh...aku akuin emosi aku masih belum bagus disitu belum bisa ngontroll emosi lebih matang dan nyampain emosi dengan baik juga ke dia padahal bisa lebih gampang sih kalau misalnya aku langsung sampai yang aku rasain tanpa perlu diemin dia ya atau bilang kedia kalau misalnya aku butuh waktu untuk nenangin diri...yahh disitu aku belajar untuk ngatur emosi aku lebih baik dan cara untuk nyampein emosi ke dia, im so sooorryyyyyy 🥺 and thankyou for being patient with my childish
+            Disini aku ga bakalan cerita panjang lebar sih, jadi di third nya itu dia bilang kalau kisah asmaranya dia yahh pas aku denger kisah cinta dia aku ngerasa aneh dan juga jealous yah perasaan aku ganyaman lah intinya...pdhal disitu aku udah kecintaan banget gais wkwkw. yahh tapi aku ga cari pembelaan setelah sampai stastiun akhir jatimulya kami pisah dia pesen gojeknya sendiri aku juga pesen gojek aku sendiri disitu aku diem banget dia chat kalo gasalah "hatihati di jalan, aku sudah sampai rumah yaa" tapi aku gada balas chat dia...yahh...aku akuin emosi aku masih belum bagus disitu belum bisa ngontroll emosi lebih matang dan nyampain emosi dengan baik juga ke dia padahal bisa lebih gampang sih kalau misalnya aku langsung sampein yang aku rasain tanpa perlu diemin dia yaa atau bilang kedia kalau misalnya aku butuh waktu untuk nenangin diri...yahh disitu aku belajar untuk ngatur emosi aku lebih baik dan cara untuk nyampein emosi ke dia, im so sooorryyyyyy 🥺 and thankyou for being patient with my childish
           </p>
         </div>
       </div>
@@ -1747,7 +1787,7 @@ const hideCardHandler = () => {
             class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/6.png"
+              src="@/assets/story_audy/continue_story2/cekcok3.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1756,7 +1796,7 @@ const hideCardHandler = () => {
             class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/7.png"
+              src="@/assets/story_audy/continue_story2/cekcok2.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1765,7 +1805,7 @@ const hideCardHandler = () => {
             class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/mystory/8.png"
+              src="@/assets/story_audy/continue_story2/cekcok1.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1791,25 +1831,8 @@ const hideCardHandler = () => {
       </div>
 
       <div class="w-1/2 h-full">
-        <div class="relative shadow-2xl">
-          <div
-            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[20%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/mystory/storry3.png"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-          <div
-            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[55%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/mystory/5.png"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
+        <div class="relative">
+          <p class="text-center mochiy tracking-widest text-sm">Sorry yaa untuk yang ini aku ga punya dokumentasinya :(</p>
         </div>
       </div>
     </div>
@@ -1843,17 +1866,127 @@ const hideCardHandler = () => {
     <!-- title -->
 
     <!-- container image -->
-
+    <div class="mt-10 px-4">
+      <h2 class="text-center poppins-medium text-2xl mb-6">Galeri Wisudaku</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/1.jpg" alt="Moment Wisuda 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/2.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/3.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/4.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/5.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/6.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/7.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/9.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/10.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/11.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/12.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/13.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/15.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/16.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="@/assets/story_audy/gallery_wisuda/17.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <!-- Tambahkan lebih banyak foto di sini -->
+      </div>
+    </div>
     <!-- container image -->
 
     <div class="">
       <p class="mt-5 poppins text-sm text-center">
-        Masih banyak moment butterfly eranya yang mungkin aku gak bisa kasih tunjukin, yah mmg
-        sebanyak itu hehhe susah ngumpulinnya satu satu
+        Makasih yaa sudah buat moment terbahagia aku, sampai sekarang aku masih sering terbayang bayang kamuuu...
       </p>
     </div>
   </main>
   <!-- my wisudaa -->
+
+  <main class="mt-20">
+
+        <!-- story keenam -->
+        <div class="w-full relative flex flex-row-reverse items-center justify-center gap-20">
+      <div class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2">
+        <div
+          class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[18px] border-transparent border-l-zinc-300 absolute top-1/2 -translate-y-1/2 -right-4"
+        ></div>
+      </div>
+
+      <div class="w-1/2 h-full bg-white shadow-lg p-8 rounded-xl">
+        <h3 class="mochiy tracking-widest text-xl">Belajar bareng di perpuss</h3>
+        <p class="poppins text-sm tracking-wider mt-1">10 December</p>
+
+        <p class="poppins text-sm mt-1">
+          Ya, tanggal 10 december itu hari kami pertama kali bertemu, wuah rasanya itu aku gugup banget sih langsung overhinking segala macam pikiran aku pikirin hahhaha, ada kejadian lucu yang ngebuat pertamuan kami seperti kedukung gitu jadi kan dia itu sering bolak balik dari bekasi ke tangsel karena kaka satu di bekasi satu di tangsel, pas waktu di bekasi ini kacamatanya ketinggalan dan ngebuat sekalian buat balikin kacamatanya ke dia soalnya kan jauh tuh kalo misalnya bolak balik tangsel dri bekasi
+        </p>
+        <p class="poppins text-sm mt-1">
+          Kami ketemu di BXC (Bintaro Xchange), aku jalan jam 10 an kalo ga salah nyampe di bxc itu jam 12 hampi ke jam 1 gitu, baru pertama kali ke bxc jadi di tuntun dia deh kwkwk baik banget, ketemu di masion feerie hahaha inget banget gais pertama kali ketemu kami couple sama sama putih padahal ga janjian hahah lucu banget, terus abis itu kami lunch bareng di gokana kalo ga salah ya wkwkw lucu banget sama sama alim sambil ngobrolin apa yak lupa sih sampai jam 2 lewat abis kami nonton wicked inget banget aku seru bagent..engga sih b aja wkwk tpi karena banreng dia jadi seru bangett, becandain ariana ketawa bareng truss suara arian bangus banget sih emang 👍 poll dehh filmnya lama baget hampi 3 jam an tpi seru karena bareng dia :)
+        </p>
+        <!-- <p class="poppins-semibold text-sm">Dan di titik ini, kekonyolanku dimulai.</p> -->
+        <p class="poppins text-sm mt-1">
+          setelah selesai nonton aku di ajak buat nemenin dia buat beli earphone?headset? itula lupa sebutannya wkwk di minisoo, trus kami nongs dulu bentar di tempat minum lupa namanya apa ngobrol banyak tapi aku inget banget deh itu dia bahas ttg grace co wkwkwk sumpa aku ga bisa ngomong apa apa disitu pasrah banget deh pokoknya sambil emote 🙏
+        </p>
+      </div>
+
+      <div class="w-1/2 h-full">
+        <div class="relative shadow-2xl">
+          <div
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/firstdate2.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/firstdate1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/firstdate3.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- story keenam -->
+  </main>
 
   <!-- happy birthday -->
   <!-- <main class="mt-24">
