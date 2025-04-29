@@ -1816,27 +1816,111 @@ const hideCardHandler = () => {
     <!-- story ketujuh -->
 
     <!-- story kedelapan -->
-    <div class="w-full relative flex flex-row-reverse items-center justify-center gap-20">
+    <div class="w-full h-[700px] relative flex flex-row-reverse items-center justify-center gap-20">
       <div class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2">
         <div
-          class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[18px] border-transparent border-l-zinc-300 absolute top-1/2 -translate-y-1/2 -right-4"
+          class="w-0 h-0 border-t-[9px] border-b-[9px] border-r-[18px] border-transparent border-r-zinc-300 absolute top-1/2 -translate-y-1/2 -left-4"
         ></div>
       </div>
 
-      <div class="w-1/2 h-full bg-white shadow-lg p-8 rounded-xl">
-        <h3 class="mochiy tracking-widest text-xl">Jemput dia di stasiun jatimulya :)</h3>
-        <p class="poppins text-sm mt-1">
-          Ini kejadian lucu sih wkwkw, jadi kalo gasalah kami malamnya itu ada masalah deh ribut tentang sesuatu lupa deh masalahnya apa wkwkw, nah seharian itu kami chatt kami pendek pendek banget + seadanya cuma buat ngabarin lgi ngapain dimana gitu gitu doang. nah jadi kan aku lagi nganter papa ke stasiun bekasi timur karena papa lagi ada urusan lah, jadi pulangnya sendiri nah pas banget dia udah nyampe di stasiun jatimulya truss aku tanya deh mau ga bareng sekalian aja gitu baliknya..itu lucu banget akunya malu malu buat nawarin wkwkw truss akhirnya aku jemput deh dia di stasiun itu aku anterin sampai rumahnya ka jisaaa heheh lucu bangettt itu dia gajadi marah ke aku heheh😋
-        </p>
+      <div class="w-1/2 h-full flex items-center">
+        <div class="w-full bg-white shadow-lg p-8 rounded-xl">
+          <h3 class="mochiy tracking-widest text-xl">Jemput dia di stasiun jatimulya :)</h3>
+          <!-- <p class="poppins text-sm tracking-wider mt-1">8 Oktober 14.16</p> -->
+          <p class="poppins text-sm mt-1">
+            Ini kejadian lucu sih wkwkw, jadi kalo gasalah kami malamnya itu ada masalah deh ribut tentang sesuatu lupa deh masalahnya apa wkwkw, nah seharian itu kami chatt kami pendek pendek banget + seadanya cuma buat ngabarin lgi ngapain dimana gitu gitu doang. nah jadi kan aku lagi nganter papa ke stasiun bekasi timur karena papa lagi ada urusan lah, jadi pulangnya sendiri nah pas banget dia udah nyampe di stasiun jatimulya truss aku tanya deh mau ga bareng sekalian aja gitu baliknya..itu lucu banget akunya malu malu buat nawarin wkwkw truss akhirnya aku jemput deh dia di stasiun itu aku anterin sampai rumahnya ka jisaaa heheh lucu bangettt itu dia gajadi marah ke aku heheh😋
+          </p>
+        </div>
       </div>
 
-      <div class="w-1/2 h-full">
-        <div class="relative">
-          <p class="text-center mochiy tracking-widest text-sm">Sorry yaa untuk yang ini aku ga punya dokumentasinya :(</p>
+      <div class="w-1/2">
+        <div class="relative shadow-2xl">
+          <div
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/jatimulya1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/jatimulya2.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/jatimulya3.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
         </div>
       </div>
     </div>
     <!-- story kedelapan -->
+
+    <!-- story ketujuh -->
+    <div class="w-full h-[550px] relative flex items-center justify-center gap-20">
+      <div class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2">
+        <div
+          class="w-0 h-0 border-t-[9px] border-b-[9px] border-r-[18px] border-transparent border-r-zinc-300 absolute top-1/2 -translate-y-1/2 -left-4"
+        ></div>
+      </div>
+
+      <div class="w-1/2 h-full flex items-center">
+        <div class="w-full bg-white shadow-lg p-8 rounded-xl">
+          <h3 class="mochiy tracking-widest text-xl">Belajar bareng di perpus ismail🥰</h3>
+          <p class="poppins text-sm tracking-wider mt-1">Date perpus ismail 14 january</p>
+          <p class="poppins text-sm mt-1">
+            Kami berdua sama sama lagi berproses punya struggle kami masing masing dia lagi fokus skripsian aku fokus buat apply apply tuh tpi pengen bange buat ketemu jadi aku usulin deh tuh buat temenin aku apply apply dong di perpus sekalian buat ketemuu 😍, kami ketemu di stasiun bekasi timur sampai ke stasiun apa ya cikini deh kalo gasalah gataudeh lupa heheh, abis kami lanjut naik jaklingko wkwkw sampai ke Perpustakaan Jakarta dan Pusat Dokumen Sastra HB Jassin| Cikini abis kami masuk kedalam harus registrasi di website gitu lupa namanya, abis itu tinggal confirm di lobby dan dikasih loker buat nyimpen barang karena gaboleh bawa tas kedalam perpusnya. pas msauk perpusnya aku akuin sih bagus banget gais nyaman buat belajar dan orang yang lagi skripsian hehhe tapi minusnya rame banget aku sama dia sampe muter muter dan akhirnya kami dapet tempat duduk tuh. karena udah jam 12 an lewat itu kami laper dan kami putusin buat makan dulu di bawah perpus ada kantin gitu hehhe sambil cerita random lagi :) setelah selesai makan kami naik lagi ke dalam perpus, oh iya kami tinggalin barang kami disitu biar tempat duduk kami ga diambil ya abis itu.
+          </p>
+          <p class="poppins text-sm mt-1">
+            setelah kami masuk ke dalam perpus lagi kami fokus lagi sama tugas masing masing abis itu aku nyeletuk gimana si hubungan kita kedepannya...bahas panjang lebar agak kecewa sih sama jawaban dia + sedih dikit dia bilang kalo misalnya dia tunggu jawaban dari Tuhan gitu yang sampai sekarang pun aku gatau apa setelah itu aku kasih dia website ini deh, waktu itu website ini masih sampai butterfly era di atas gais wkwkwk dia ngeriview langsung depan aku haha lucu banget sambil bercanda bercandaaa huaa..ini salah satu butterfly era aku yaa🥺
+          </p>
+        </div>
+      </div>
+
+      <div class="w-1/2">
+        <div class="relative shadow-2xl">
+          <div
+            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/perpus1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/cekcok2.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+          >
+            <img
+              src="@/assets/story_audy/continue_story2/cekcok1.jpg"
+              alt="storry_we_meet"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- story ketujuh -->
 
    </main>
   <!-- story again -->
@@ -1859,7 +1943,7 @@ const hideCardHandler = () => {
       </div>
 
       <p class="mt-5 poppins text-sm text-center">
-        Jauh sebelum hari wisudaku dia pernah bete karena respon aku yang kurang gitu, jadi dia tanya ke aku "seberapa senang aku kalau dia datang ke wisuda aku kasih rate dari 1-10" aku jawabnya agak panjang soalnya aku kawathir sih + gaenakan juga ke dia soalnya kan di wisuda aku di unai ya aku mikirnya gimana cara dia bisa dateng ke unai jauh banget takutnya kenapa kenapa cape jugakan dll lain jadinya aku bilang "aku seneng banget kalo misalnya kamu bisa dateng ke wisuda aku, tapi ga usa di paksain ya kalo misalnya gabisa soalnya aku takut kamu kenapa kenapa di jalan" abis itu dia langsung matiin call nya wkwkwk, kalo aku pikir pikir lagi iya sih siapa yang ga bete kalo dijawabnya gitu ya padahal di udah mau effort banget aku malah nggak ngehargain effort dia, jadi akhirnya dia mutusin buat ga datang deh katanya :( sedih banget sih aku, tapi yahh aku gamau maksa juga,,tapi pas malam minggu sebelum hari-h wisuda aku dia bilang mau dateng ke wisuda aku ditemenin temennya marcela wkwk jujur aku seneng banget happyy banget gaii hapyyy bangetttttt wkwkw, salah satu kebahagian yang ga pernah aku lupain waktu wisuda ini sih bener bener puncak rasa sayang aku ke dia udah full banget rasanya, gila tiap kali aku liat dia di unai rasanya pengen peluk dia erat eratt hahahah
+        Jauh sebelum hari wisudaku dia pernah bete karena respon aku yang kurang gitu, jadi dia tanya ke aku "seberapa senang aku kalau dia datang ke wisuda aku kasih rate dari 1-10" aku jawabnya agak panjang soalnya aku kawathir sih + gaenakan juga ke dia soalnya kan di wisuda aku di unai ya aku mikirnya gimana cara dia bisa dateng ke unai jauh banget takutnya kenapa kenapa cape jugakan dll lain jadinya aku bilang "aku seneng banget kalo misalnya kamu bisa dateng ke wisuda aku, tapi ga usa di paksain ya kalo misalnya gabisa soalnya aku takut kamu kenapa kenapa di jalan" abis itu dia langsung matiin call nya wkwkwk, kalo aku pikir pikir lagi iya sih siapa yang ga bete kalo dijawabnya gitu ya padahal di udah mau effort banget aku malah nggak ngehargain effort dia, jadi akhirnya dia mutusin buat ga datang deh katanya :( sedih banget sih aku, tapi yahh aku gamau maksa juga,,tapi pas malam minggu sebelum hari-h wisuda aku dia bilang mau dateng ke wisuda aku ditemenin temennya marcela wkwk jujur aku seneng banget happyy banget gaiis hapyyy bangetttttt wkwkw, salah satu kebahagian yang ga pernah aku lupain waktu wisuda ini sih bener bener puncak rasa sayang aku ke dia udah full banget rasanya, gila tiap kali aku liat dia rasanya pengen aku peluk dia erat eratt hahahah
       </p>
       <P class="font-semibold text-center">disini rasanya Tuhan ngejawab semua doa doa ku, semua kekhawatiran ku di buang sama Tuhan</P>
     </div>
@@ -1929,63 +2013,7 @@ const hideCardHandler = () => {
 
   <main class="mt-20">
 
-        <!-- story keenam -->
-        <div class="w-full relative flex flex-row-reverse items-center justify-center gap-20">
-      <div class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2">
-        <div
-          class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[18px] border-transparent border-l-zinc-300 absolute top-1/2 -translate-y-1/2 -right-4"
-        ></div>
-      </div>
 
-      <div class="w-1/2 h-full bg-white shadow-lg p-8 rounded-xl">
-        <h3 class="mochiy tracking-widest text-xl">Belajar bareng di perpuss</h3>
-        <p class="poppins text-sm tracking-wider mt-1">10 December</p>
-
-        <p class="poppins text-sm mt-1">
-          Ya, tanggal 10 december itu hari kami pertama kali bertemu, wuah rasanya itu aku gugup banget sih langsung overhinking segala macam pikiran aku pikirin hahhaha, ada kejadian lucu yang ngebuat pertamuan kami seperti kedukung gitu jadi kan dia itu sering bolak balik dari bekasi ke tangsel karena kaka satu di bekasi satu di tangsel, pas waktu di bekasi ini kacamatanya ketinggalan dan ngebuat sekalian buat balikin kacamatanya ke dia soalnya kan jauh tuh kalo misalnya bolak balik tangsel dri bekasi
-        </p>
-        <p class="poppins text-sm mt-1">
-          Kami ketemu di BXC (Bintaro Xchange), aku jalan jam 10 an kalo ga salah nyampe di bxc itu jam 12 hampi ke jam 1 gitu, baru pertama kali ke bxc jadi di tuntun dia deh kwkwk baik banget, ketemu di masion feerie hahaha inget banget gais pertama kali ketemu kami couple sama sama putih padahal ga janjian hahah lucu banget, terus abis itu kami lunch bareng di gokana kalo ga salah ya wkwkw lucu banget sama sama alim sambil ngobrolin apa yak lupa sih sampai jam 2 lewat abis kami nonton wicked inget banget aku seru bagent..engga sih b aja wkwk tpi karena banreng dia jadi seru bangett, becandain ariana ketawa bareng truss suara arian bangus banget sih emang 👍 poll dehh filmnya lama baget hampi 3 jam an tpi seru karena bareng dia :)
-        </p>
-        <!-- <p class="poppins-semibold text-sm">Dan di titik ini, kekonyolanku dimulai.</p> -->
-        <p class="poppins text-sm mt-1">
-          setelah selesai nonton aku di ajak buat nemenin dia buat beli earphone?headset? itula lupa sebutannya wkwk di minisoo, trus kami nongs dulu bentar di tempat minum lupa namanya apa ngobrol banyak tapi aku inget banget deh itu dia bahas ttg grace co wkwkwk sumpa aku ga bisa ngomong apa apa disitu pasrah banget deh pokoknya sambil emote 🙏
-        </p>
-      </div>
-
-      <div class="w-1/2 h-full">
-        <div class="relative shadow-2xl">
-          <div
-            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/continue_story2/firstdate2.jpg"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-          <div
-            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/continue_story2/firstdate1.jpg"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-          <div
-            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/continue_story2/firstdate3.jpg"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- story keenam -->
   </main>
 
   <!-- happy birthday -->
