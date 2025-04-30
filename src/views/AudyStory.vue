@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed  } from 'vue'
 
 const showCard = ref(false)
 const imageSrc = ref('')
@@ -8,12 +8,29 @@ const showCardHandler = (no_folder, number) => {
   // /our_daily/daily3/2.jpg
   showCard.value = true
   imageSrc.value = `/our_daily/daily${no_folder}/${number}.jpg`
-  console.log(imageSrc.value)
 }
 
 const hideCardHandler = () => {
   showCard.value = false
 }
+
+const kocakHandler = (no) => {
+  showCard.value = true;
+  imageSrc.value = `/kocak/${no}.jpg`
+}
+
+const gambar = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+
+const allImages = Object.entries(
+  import.meta.glob('@/assets/story_audy/gallery_wisuda/*.jpg', { eager: true })
+)
+  // Urutkan berdasarkan nama file (path-nya)
+  .sort((a, b) => {
+    const getNumber = path => parseInt(path.match(/(\d+)\.jpg$/)?.[1] || 0)
+    return getNumber(a[0]) - getNumber(b[0])
+  })
+  // Ambil hanya URL default-nya
+  .map(([_, module]) => module.default)
 </script>
 
 <template>
@@ -1953,50 +1970,8 @@ const hideCardHandler = () => {
     <div class="mt-10 px-4">
       <h2 class="text-center poppins-medium text-2xl mb-6">Galeri Wisudaku</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/1.jpg" alt="Moment Wisuda 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/2.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/3.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/4.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/5.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/6.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/7.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/9.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/10.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/11.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/12.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/13.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/15.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/16.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
-          <img src="@/assets/story_audy/gallery_wisuda/17.jpg" alt="Moment Wisuda 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        <div v-for="i in allImages"  class="overflow-hidden rounded-lg shadow-lg">
+          <img :src="i" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
         <!-- Tambahkan lebih banyak foto di sini -->
       </div>
@@ -2012,21 +1987,52 @@ const hideCardHandler = () => {
   <!-- my wisudaa -->
 
   <main class="mt-20">
+    <!-- title -->
+    <div class="relative pt-5">
+      <h1 class="poppins-medium tracking-widest text-3xl">Perbincangan, pembahasan kocak kami hahha</h1>
+      <p class="mt-1 poppins text-sm">Sumpa yaa ini lucu lucu banget dahh, baca aja yaa bisa di klick juga ko kalo kurang jelas hehhe</p>
+    </div>
+    <!-- title -->
 
-
+    <!-- galery -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 py-3">
+      <img v-for="image in gambar" @click="kocakHandler(image)" :src="`/kocak/${image}.jpg`" alt="Image 1" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
+      <!-- Tambahkan gambar lain sesuai kebutuhan -->
+    </div>
+    <!-- galery -->
   </main>
 
+    <!-- song -->
+    <main class="mt-20">
+    <!-- title -->
+    <div class="relative pt-5">
+      <h1 class="poppins-medium tracking-widest text-3xl"></h1>
+      <p class="mt-3 poppins text-sm">
+        aloww jujur aku udah gakuat lagi buat lanjutin cerita ini 
+        <span class="font-semibold">ini ada lagu sambil dengerin yah</span>
+      </p>
+      <div class="mt-3">
+        <audio src="/sound/sound1.mp3" controls></audio>
+      </div>
+    </div>
+    <!-- title -->
+  </main>
+  <!-- song -->
+
   <!-- happy birthday -->
-  <!-- <main class="mt-24">
+  <main class="mt-24">
   <div class="relative pt-5">
   <span class="block w-32 h-1 bg-slate-800 rounded-full absolute left-1/2 -top-2 transform -translate-y-1/2"></span>
   <span class="block w-36 h-1 bg-slate-800 mt-1 rounded-full absolute top-0 left-[40%]"></span>
-  <div class="flex items-center gap-2 w-fit ">
-    <box-icon type='solid' name='party' size="lg"></box-icon>
-    <h1 class="poppins-medium tracking-widest text-3xl">Happy Birthday</h1>
+  <div class="">
+    <div class="flex items-center gap-2 w-fit m-auto">
+      <box-icon type='solid' name='party' size="lg"></box-icon>
+      <h1 class="poppins-medium tracking-widest text-3xl">Happy Birthday</h1>
+    </div>
+    <p class="poppins text-sm tracking-wider text-center">21 February 2025</p>
   </div>
   <p class="mt-3 poppins text-sm text-center">Setelah call pertama itu, aku ngerasanya kalo ada sesuatu yang beda idk exactly to explain it, but there was this feeling-like..were getting closer hahaha, lebih intens, dan lebih terbuka satu sama lain. Obrolan-obrolan kami jadi lebih mengalir, lebih sering, dan somehow terasa effortless. And this is where my <span class="font-semibold">butterfly era</span> officially began ☺️</p>
 </div>
-</main> -->
+</main>
   <!-- happy birthday -->
 </template>
