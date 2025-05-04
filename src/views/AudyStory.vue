@@ -2008,11 +2008,43 @@ const allImages = Object.entries(
     <div class="relative pt-5">
       <h1 class="poppins-medium tracking-widest text-3xl"></h1>
       <p class="mt-3 poppins text-sm">
-        aloww jujur aku udah gakuat lagi buat lanjutin cerita ini 
-        <span class="font-semibold">ini ada lagu sambil dengerin yah</span>
+        Allow..wuahh gak keresa ya udah sampai sini aja ceritanya, to be honest aku ga sanggup lagi sih buat ceritain lanjutan ceritanya soalnya abis ini lanjutan ceritanya bisa buat aku nangis banget wkwk. untuk sampai sini aja aku udah nangis berapa kali yaa...tau dehh gak ngitungg heheheh lebih dari 10 belasan sih kyknya..gakuat banget jujur, buat nyari nyari dokumentasi dokumnetasi cerita kami, aku pernah tuh buka laptop mau lanjutin cerita ini tpi malah begong sampai berjam jam abis itu nangiss hahhaha akhirnya ga sanggup buat lanjutin cerita ini dan jadinya rebahan seharian makanya lama banget ini aku selesaiinyaa karena kebanyakan nangis nyaaa. jadi abis ini ceritanya mungkin ada yang salah sedikit atau aku lupa lupa maaf yaa, soalnya cuma sebatas ingatan aku aja 
+      </p>
+      <p class="mochiy tracking-widest text-xl mt-1">Nyamper Dia ke BLOK M</p>
+      <p class="poppins text-sm">
+        aku lupa tanggal nya kapan nah jadi kalo gasalah dia itu mau ngurus sesuatu deh di blok m, pas aku tanya "kamu mau ngapain ke blok m?" dia gak mau jawab njir wkwk katanya misi rahasia keluarga ntahla udah aku paksa juga dia ttp gamau kasih tau mau ngapain, trus aku tanya "kamu sendiri ke blok m?" nah makanya aku nawarin buat nyamperin dia kesitu, sekalian buat ketemu dehh wkwkw, di blok m kami niatnya mau nonton apa ya..film horor indo lupa ehh judulnya wkwkw..tpi karena aku nyampenya jam 2 an kalo gasalah..karena filmnya adanya jam 1 trus jam 3 jadinya kami makan dulu,,kami mau nyari makan di food court tuh tapi rame banget, jadinya kami nyari ke bawah dehh, kalo gasalah lagi yaaa...makan di gokana lagi WKWKWK
+      </p>
+      <p class="poppins text-sm">
+        setelah kami makan lanjut nonton deh, nonton apa ya lupa euhh judulnya pokoknya film horor. EHHH BUKAN FILM HOROR ANJAYYY WKWKWKWKW FILM 1 KAKA 7 PONAKANNN...IYAKK INGET BANGET AKU HAHAHA SORRY SORRY wuahh ini film nya seruh sih menginspirasi banget jadi dia tinggal sama kaka yang udah nikah tpi tbtb suaminya itu meninggal yang keadaanya itu kakanya sedang hamil tak lama kemudian kakanya pun melahirkan anak yang di kandungnya tpi sedih banget itu kakanya meninggal setelah melahirkan anaknya, nah disinilah perjuangan pemeran utama membiayai 7 ponakan dari saudara saudaranya wauhh poll parah ceritanya nyentuh ditambah kisa romansa nya juga...KERENN SIHH KERENNN...kalo film horor mah itu aeon yakk wkwkwk 🙏
+      </p>
+      <p class="poppins text-sm">
+        Gila gua di situ udah niat banget tuh mau nembak dia wkwkwk tpi dia bahas bahas doanya ttg Tuhan dan katanya dia juga lagi siapin diri idk, dia juga ada cerita ttg penyakitnya dan buat gua mungkin belum waktunya dan akhirnya aku pulang dengan perasaan tidak nyaman tuhh tbtb pas pulang dia ngirimin vt yang contentnya ttg htsan itu gapapa!!?? tpi keknya dia cuma mau becanda sih "KYKNYA YAA" gatau juga sih yaudahlah posotif thinking aj itumah
+      </p>
+      <p class="mochiy tracking-widest text-xl mt-1">Aku nyatain perasaanku</p>
+      <p class="poppins text-sm tracking-wider mt-1">00.00 / 2 February 2025 </p>
+      <p class="poppins text-sm">
+        Fyuhhh...aku berdoa ke Tuhan buat bisa nyeritain part bagaian ini, akuu....huhuu :(, aku lupa sih awalnya gimana..pokoknya malam itu kami call kyk biasa truss pembahasan kami apa yaa??seinget aku awalnya dia nanya kenapa aku mau sama dia atau kenapa aku suka sama dia gitu gitu sih truss kami deeptalk deh..aku juga nanya kapan dia mulai suka aku balik, sampai dititik akhirnya aku nanya ttg track record percintaan dia, akhirnya dia mulai cerita dri sma? ehh dri sd deh keknya wkwk dan sampai mantan terakhirnya dan dia bilang kalau mantannya "oriza" kalo ga salah ya maap kalo salah 🙏 itu ternyata ikut ke korea juga postech. GILA AKU DISITU BENGONG..DIEM..GATAU HARUS NGERESPON APA..GATAU HRS NGOMONG APA.. AKU DIEM MEMBEKU BRP MENIT ITU YAA, jujur shock berat sih dengarnya, rasanya kek sesakit itu njir, mmg sesakit itu aku sumpaa!! fuhhh..truss setelah diam berapa menit aku mulai ngomong lagi, "kenapa baru ngomong sekarang?" "aku sakit loh denger ini!" "kamu ngapain aj disitu sama dia?" "perasaan kamu pas dikorea gimana sama dia?" gilaa overthinking aku bermunculan tpi jujur disitu aku udah sayanggggg..banget anjritttt bener bener apa yaa..udah kecintaan  banget deh, qoute "cinta itu buta" gais rill banget dahh, dia juga nemenin ovt aku semaleman ga dibiarin buat mikir aneh anehh, akhirnya aku mikir bahwa kalau dia itu benar di kasih tau semua ttg dirinya dulu ke aku sampai setransparan itu kyk ngasih tau kalau itu sebagai bentuk keseriusan dia ke aku
+      </p>
+      <p class="poppins text-sm mt-1">1. dia nunjukin kalo misalnya dia moodyan + tukang bete + tukang berantem dramatic gf wkwkwk jujur sih ngangennin :( </p>
+      <p class="poppins text-sm">2. dia tunjukin tuh kalo misalnya dia itu gampang bosen jadi mmg harus effort sih buat menuhin love langguage nya dia </p>
+      <p class="poppins text-sm">3. dia kasih tahu kalo misalnya dia punya penyakit karena dari kecil dia selalu dicuekin..perasaan dia ga sering di validasi sama mamanya ngebuat dia kadang ngerasa ga pernah dapet rasa kasih sayang </p>
+      <p class="poppins text-sm">4. terakhir di cerita ttg track record kisah percintaan dia. benar benar diceritain semua sih sama dia.</p>
+      <p class="poppins text-sm mt-1">aku terima semua yang ada di dalam diri dia ini juga bentuk keseriusan aku ke dia, gada yang di tutupin juga sama dia yang akhirnya aku mikir kalau dia udah se transparan itu ke kyk bilang secara tersirat "aku nunjukin kalo aku orangnya kyk gini nih, jo!", aku udah tau semua ttg hidup dia kalo mundur gitu kesannya kyk gak ada keseriusan gitukan yang buat aku akhirnya mutusin buat nembak dia malam itu.</p>
+      <p class="poppins text-sm my-2">
+        <span class="font-semibold">"Nyeselll!?"</span> ENGGAK!! kalaupun aku bisa muter waktu lagi aku bakalan ttp nembak dia di saat itu, di waktu itu, di moment itu jugakk mungkin yg bakalan aku rubah paling cara aku ngetreat dia dan effort aku sih heheh keknya ini lanjut di part akhir aja yaa
+      </p>
+      <p class="poppins text-sm">
+        DAN IYAA AKU MULAI PACARAN SAMA DIA HAHAHAH, ini pertama kalinya aku manggil cantik keseseorang, pertama kalinya aku manggil jelek keseseorang, pertama kalinya aku manggil kepunyaanku, pertama kalinya aku manggil sayanggg:(, rasanya mau pamerin ke seluruh dunia kalau dia udah jadi milik aku hahha. tahu gak aku aja gapercaya kalo misalnya bisa dapetin dia, kyk "ini beneran yak dia pacar aku!?? ini aku bukan lagi mimpikan???" sampai segapercaya itu hahhahah wahh dalam hati "akhirnya dia manggil sayang jugak ke akuu yaa", aku udah ga dimarahin lagi kalo misalnya manggil sayang kedia wkwkw. dan untuk pertama kalinya aku se clingy itu ke cewek bener bener se clingy itu!! hampir tiap malam itu aku clingy in dia, tempat aku recharge energy bahagia banget rasanya dan keseharian kami pun berlanjut seperti biasa
+      </p>
+      <p class="poppins text-sm">
+        Tapi jujur pacaran itu ga selalu ttg bahagianya sihh kami ttp sering berantem, masih sering mis komunikasi, ego kami masih sama sama tinggi apa lagi dia sensitif banget salah dikit bisa berabeee, harus bisa menuhin love Language pasangan aku selalu mau belajar untuk bisa lebih baik lagi tapii...masalah kami yang paling sering itu di cara treat aku yang agak kureng sih..mungkin dia udah numpuk sih rasa capenyaa gatau dehh ini ga bisa diunkapin melalui kata kata mmg harus berinteraksi dan ketemu hrsnya biar dia jangan ngerasa kalau dia itu ga disayang
+      </p>
+      <p class="mochiy tracking-widest text-xl mt-1">Date ke aeon tanjung barat</p>
+      <p class="poppins text-sm">
+        Aku udah kangen banget sih sama dia, pengen banget ketemu, aku akhirnya ajak dia buat ketemuan, soalnya aku lagi sibuk sibuknya nyari kerja tapi di sela sela kesibukan aku, ajak dia ketemu lagi untuk recharge energy aku lagi wkwk, kami di aeon itu nonton horror!! nahh ini baru bener kami nonton horror wkwkwk lumaya serem sih filmnya apa judulnya petapa gunung apa gitu, kalo gasalah yaa wkwkwk itu di depan kami ada orang berisik banget lagi gajelazz. abis nonton kami mau nongs dulu bentar ngobroll ngobroll abis itu dia nyamper temennya deh aku balik, soalnya dia pengen nginep di tempat temennya biar ga bolak balik kampusnya
       </p>
       <div class="mt-3">
-        <audio src="/sound/sound1.mp3" controls></audio>
+        <!-- <audio src="/sound/sound1.mp3" controls></audio> -->
       </div>
     </div>
     <!-- title -->
@@ -2021,18 +2053,185 @@ const allImages = Object.entries(
 
   <!-- happy birthday -->
   <main class="mt-24">
-  <div class="relative pt-5">
-  <span class="block w-32 h-1 bg-slate-800 rounded-full absolute left-1/2 -top-2 transform -translate-y-1/2"></span>
-  <span class="block w-36 h-1 bg-slate-800 mt-1 rounded-full absolute top-0 left-[40%]"></span>
-  <div class="">
-    <div class="flex items-center gap-2 w-fit m-auto">
-      <box-icon type='solid' name='party' size="lg"></box-icon>
-      <h1 class="poppins-medium tracking-widest text-3xl">Happy Birthday</h1>
+    <div class="relative pt-5">
+      <span class="block w-32 h-1 bg-slate-800 rounded-full absolute left-1/2 -top-2 transform -translate-y-1/2"></span>
+      <span class="block w-36 h-1 bg-slate-800 mt-1 rounded-full absolute top-0 left-[40%]"></span>
+      <div class="">
+        <div class="flex items-center gap-2 w-fit m-auto">
+          <box-icon type='solid' name='party' size="lg"></box-icon>
+          <h1 class="poppins-medium tracking-widest text-3xl">Her Birthday</h1>
+        </div>
+        <p class="poppins text-sm tracking-wider text-center">21 February 2025</p>
+      </div>
+      <p class="mt-3 poppins text-sm text-center">
+        Ini pertama kalinya aku beliin hadiah ke cewe wkwkwk ga ngertii 😭😭😭 aku nanya ke karolin "ehh dia ulang tahun bagusnya aku beliin apa yaa", truss aku juga nanya ke ellen dia pengen hadia apa yaa, setelah aku pikirin panjang aku mutusin buat beli tas sama bunga buat dia kyknya dia juga lagi stress banget itu waktu skripsiannya gatau deh dia suka ga yaa sama hadiah aku hahhahaha, maaf ya cuma bisa ngasih itu pengennya ngasih lsg sih kedia tpi karna satu dua hal dia gabisa buat ketemu aku juga sih gabisa soalnya motor kepake semua sama abang, rasanya sedih segabisa itu aku buat ketemu dia :(
+      </p>
+      <div class="relative h-[650px] flex items-center justify-center">
+        <!-- Gambar 1 -->
+        <img
+          src="@/assets/story_audy/birthday/1.jpg"
+          alt="Image 1"
+          class="w-[300px] h-[560px] object-cover rounded-xl shadow-xl transform rotate-[-6deg] -translate-x-[220px] absolute z-10 hover:scale-105 hover:rotate-0 transition-all duration-300 hover:z-50"
+        />
+
+        <!-- Gambar 2 (tengah) -->
+        <img
+          src="@/assets/story_audy/birthday/3.jpg"
+          alt="Image 2"
+          class="w-[300px] h-[560px] object-cover rounded-xl shadow-2xl transform -translate-y-4 z-20 hover:z-50 hover:scale-105 transition-all duration-300"
+        />
+
+        <!-- Gambar 3 -->
+        <img
+          src="@/assets/story_audy/birthday/2.jpg"
+          alt="Image 3"
+          class="w-[300px] h-[560px] object-cover rounded-xl shadow-xl transform rotate-[6deg] translate-x-[220px] absolute z-10 hover:scale-105 hover:rotate-0 transition-all duration-300 hover:z-50"
+        />
+      </div>
+
     </div>
-    <p class="poppins text-sm tracking-wider text-center">21 February 2025</p>
-  </div>
-  <p class="mt-3 poppins text-sm text-center">Setelah call pertama itu, aku ngerasanya kalo ada sesuatu yang beda idk exactly to explain it, but there was this feeling-like..were getting closer hahaha, lebih intens, dan lebih terbuka satu sama lain. Obrolan-obrolan kami jadi lebih mengalir, lebih sering, dan somehow terasa effortless. And this is where my <span class="font-semibold">butterfly era</span> officially began ☺️</p>
-</div>
-</main>
+  </main>
   <!-- happy birthday -->
+
+  <!-- last part -->
+     <!-- title last-->
+    <div class="mt-32 border-b-2 pb-3 flex justify-center mx-auto items-center gap-3 w-fit">
+      <!-- <box-icon name="message-alt-dots" size="lg"></box-icon> -->
+      <h1 class="poppins-medium tracking-widest text-3xl">Last Part My Story</h1>
+    </div>
+    <!-- title last-->
+
+    <main class="mt-5">
+      <p class="mt-3 poppins text-sm text-center">
+        Akhirnya sampai ke part ini juga ya, gakuat banget ceritainnyaaa huhuu...bingung banget mau ceritaain yang ini gimana yaa :( okeeee..jadi kyk yang aku bilang kalau pacaran itu ga tentang bahagianya doang, ga cuman ttg gemesnya doang, dan yahh tentu kami sering berantem but it's okay semua itu proses untuk kebentuknya sebuah hubungan yang kita mau nantinya ada yang kami ganyaman kami obrolin baik baik, satu persatu masalah kami lalui aku belajar lagi untuk dapat jadi lebih baik kedapannya aku belajar gimana berkomunikasi dengan baik kedia, aku yang cemburuan tapi aku percaya kalo misalnya dia punya Personal boundariesnya yang buat aku yakin bahwa dia gabakalan aneh aneh walaupun dia punya banyak teman cowo and i know his se friendly itu and i know she has a male bestfriend tapi aku percaya dan ga pernah permasalahin itu aku ga pernah kekang dia dengan aturan apapun itu karena ya aku percaya ke dia yang buat aku merasa special dan beda dari yang lain.
+      </p>
+      <p class="mt-2 poppins text-sm text-center">
+        hingga waktu itu aku pernah bete, soalnya aku mau cerita ke dia, aku masuk ke tahap final interview, aku udah excited banget itu mau cerita kedia, tapi dia gabales bales sampai sore deh baru dia bales. mungkin disini sih titik awalnya titik kesalahan aku...aku terlalu terburu buru...aku hanyut dengan rasa kesal sesaat aku ga berpikir panjang mungkin aja harinya juga lagi cape, dia mungkin lagi hectic hecticnya tapi akuu malahh ngebuat perasaan dia makin campur aduk..tpi aku cuma mau komunikasiin rasa kesalnya aku, bukan yg gimana atau mau marah gimana gimana...dan akhirnya malah jadi makin runyamm permasalahanya ga selesai hari itu, soalnya dia cape dia minta waktu untuk sendiri, harusnya aku lebih sabar lagi sih waktu itu..hrsnya aku paksa minta buat ketemu obrolin baik baik, yg mungkin aja bisa buat hasilnya bisa berbeda, yahh sudah berlalu juga sih...mungkin dulu gara gara keadaan aku juga lgi banyak pikiran dan rasa stress yg menumpuk belum dapet jawaban jawaban dri Tuhan (kerja) itu memperngaruhi cara aku berpikir dan pengambilan keputusan, aku jadi gampang cape akhirnya setelah dia coba nenangin diri akhirnya dia call aku dan ngehubungin aku lagi, kami gobrol baik baik masalah ini pun selesai kami saling minta maaf, tapi keesokanya aku ngerasa dia beda banget, kyk engga dirinya lagi..rasanya kyk ada gap gitu di antara kami, dan juga kami jarang banget call karena ada satu dua hal lah aku gatau juga kenapa...dan iya kami semakin ada jarak, aku ngerasa kyk ada yang salah, aku ngerasa kyk ada sesuatu yang berbeda dri dia..akhirnya aku beraniin diri buat nanya kyk nanya keadaanya "gapapakan?", "kalo misalnya ada kenapa kenapa bilang aj ya?", "atau mungkin ada akunya salah gitu?", "gapapa ya buat di obrolin baik baik" dan di hari itu dia benar benar ga ada manggil aku dengan panggilan sayang seperti biasanya dan aku bener bener ngerasa kayak memang ada sesuatu gituu.
+      </p>
+      <p class="mochiy tracking-widest text-xl mt-1 text-center">3 Maret 2025</p>
+      <p class="poppins mt-2 text-sm text-center">
+        di tanggal 3 maret ini aku ga nyapa selamat pagi ke dia, aku nunggu dia yang ngabarin aku, untuk kalo udah siap ngomong kabarin aj tapi di pagi harinya ini aku ada interview di daerah pulogebang dan setelah aku sampai rumah kamipun call bicara baik baik........aku menghela nafasss panjangggg bangettt.......dia mulai ngomong pelan pelan..dia ngejelasin.. disaat dia jelasin aku cuma bisa diam, tangan aku gematar...pikiran aku kosongggg..aku gigit bibir bagian bawah aku kencengggg bangett..gatau aku hrs jawab apa kedia, otak aku bener bener kosong!!! bener bener kosonggggg sumpaa. dia bilang :
+      </p>
+      <p class="poppins mt-2 text-sm text-center">"Jooo, aku ngerasa 0 ke 100 nya ga works"</p>
+      <p class="poppins mt-2 text-sm text-center">"dia ngerasa flat banget, kalu misalnya effort aku masih kurang :("</p>
+      <p class="poppins mt-2 text-sm text-center">"pdhl masih baru tapi jadian tpi sparkle, percikan dri cinta itu ga kerasa"</p>
+      <p class="poppins mt-2 text-sm text-center">
+        aku ngerasa ngedown banget semua yg aku overthinking dri kemarin kemarinnya terjadi, aku cuma bisa ngeiyain semua kata kata dia...dengan keadaan aku yang shock itu dan otak aku yang lgi kosong aku gatau harus ngejawab apa, aku ga bisa cari pembelaan apa apa lagi lemes banget rasanyaaa mau nangisss, sakit banget, rasanya gamau percaya dengan apa yang terjadi huuuuuu....setelah call itu aku masih coba buat ngeyakinin dia, tpi tetep aja :((( gagabisa..rasanya kalo mmg semua ini terjadi karena memang gara gara kesalahan aku dan juga cara treat dan kurangnya effort aku mungkin aku pantes buat dapetin ini :( tpi i don't know juga sihh rasanya sakit bangettttt, aku cuma berharap kalau semua keputusan dia mmg rill dari dia ga ada campur tangan external dari luar 
+      </p>
+      <p class="poppins mt-2 text-sm text-center">
+        setelah semua itu terjadi aku....gatau...aku gabisa ungkapin dengan kata kata, hidup ini terus berjalan....hari demi hari menyesakkan rasanya mau balik ke october lagi ngulang dari awal, awal ketemu dia huuhuu jujur aku mimpiin dia berkali kali awal aku bangun rasanya nyesek bangettt, ga mood ngapa-ngapain maunya rebahan. kadang kalo aku lagi kesepian banget aku call olin dengerin cerita dia, cuma ke olin aku bisa cerita waktu akhirnya nyembuhin luka ini dan semua yang aku rasain aku tulis di dalam cerita ini sekarang, kadang masih suka doa ke Tuhan "Tuhan boleh ga sih aku minta hal egois hahaha minta hal yang gamungkin terjadi ini bisa terjadi"
+      </p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan bisa ga misalnya goboleh ada cowo yang dateng ke dia wkwkw"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan to much ga ya kalo misalnya aku datang ke mamanya trus pegang tangannya bilang ma audy jahatin aku, tpi semua itu ga bener kan maa! aku lamar dia sekarang ya maa! AOKWOKWO"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku kuat ga ya liat dia dengan yg baru :("</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku masih belum bisa lupain dia lohh:( gimana inii??"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku bakalan baik baik aja ya kedepannya? Tuhan aku harus gimana ini? Tuhan?? Tuhannn....😭"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku gakuat hidup aku sakit bangettt :((("</p>
+      <p class="poppins mt-2 text-sm text-center">
+        Hingaa waktu yang nyembuhim semua luka luka aku ini, aku udah gatau kabar tentag dia, aku udah gapernah dengar suara dia, aku gakuat untuk buka instagram, takut banget kambuh rasa sakit ini, terkadang aku masih suka relapse, sampai tiba tiba dia datang lagi Nyeletuk "semlekom! sombong amatt" jujur disitu aku berharap lagi kalau misalnya kami bisa kembali ke waktu yang dulu lagi, aku nanya kabar dia, dia juga nanya kabar aku tapi entah kenapa rasanya dia berbeda, padahal ellen bilang kalo dia kangen tpi kenapa sikap dia kyk gini yaa shit mann, shiballl wkwkw, dikasih mixed signal gini yaaak, fyuhhhh agak sakit juga yahhh...kyk aku tuh lagi nari di telapak tangannya dia wkwkwk.
+      </p>
+      <p class="poppins mt-2 text-sm text-center">
+        sekali lagi aku gada bilang dia jahat, ini 100% pov dari aku sendiri, perasaan manusia ini ribet banget susah untuk di mengerti banyak faktor yang memperngaruhi, baik dari keluarga, pertemanan dan juga lingkungan sekitar mereka. dia juga punya pemikiran sendiri, punya perasaannya yang ga bisa aku mengerti atau akau rasain, aku ga bisa ngejudge apa apa. semua sudah terjadi..aku percaya rencana Tuhan..aku selalu berdoa ke Tuhan untuk berikan yang terbaik ke aku
+      </p>
+      <p class="poppins mt-1 text-sm text-center">
+        Yeremia 29:11 Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan.
+      </p>
+      <p class="poppins mt-1 text-sm text-center">Yesaya 55:8 Sebab rancangan-Ku bukanlah rancanganmu, dan jalanmu bukanlah jalan-Ku, demikianlah firman TUHAN.</p>
+      <p class="poppins mt-2 text-sm text-center">Terimakasih sekali lagi ke orang yang pernah aku cintai, yang pernah aku panggil sayang, yang pernah aku sayang sebegitu sayangnya, terimakasih orang yang pernah aku panggil cantik, terimakasih....dari kamu aku belajar bahagia dari kamu juga aku merasakan rasa sakit ini, maaff kyknya udah kebanyak kata maaf, tapi cuma kata maaf yang bisa aku ucapin, maaf ya belum bisa jadi terbaik yang kamu mau kita sama sama percaya sama Tuhan kan :) tapi semoga Tuhan ga nyuruh buat kita pisah dan saling menutup perasaan kita:( aku juga percaya semua yang kita lalui itu bukan buat main main tapi bentuk sebuah keseriusan.</p>
+
+    </main>
+  <!-- last part -->
+
+  <!-- title -->
+  <div class="mt-16 mx-auto border-b-2 pb-3 flex justify-start items-center gap-3 w-fit">
+    <box-icon name="image" type="solid" color="black" size="lg"></box-icon>
+    <h1 class="poppins-medium tracking-widest text-3xl">Gallery in my Relationship</h1>
+  </div>
+  <!-- title -->
+
+  <!-- my favorite image -->
+<main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 px-4">
+  <div class="flex items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/1.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="flex items-start">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/10.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="md:col-span-2 flex items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/3.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="flex items-end">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/13.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="flex items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/5.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="md:col-span-2 flex items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/6.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="md:col-span-2 flex justify-center items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/8.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+
+  <div class="md:col-start-5 md:col-end-7 flex items-center">
+    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+      <img
+        src="@/assets/story_audy/audystory_img_kecil/4.png"
+        alt="selfie_time"
+        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+      />
+    </div>
+  </div>
+</main>
+<!-- my favorite image -->
+
+
 </template>
