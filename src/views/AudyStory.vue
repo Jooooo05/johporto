@@ -1,5 +1,5 @@
 <script setup>
-import { ref, nextTick, computed  } from 'vue'
+import { ref, nextTick  } from 'vue'
 
 const showCard = ref(false)
 const imageSrc = ref('')
@@ -26,6 +26,17 @@ const kocakHandler = (no) => {
 }
 
 const gambar = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+
+const gallery_relation = Object.entries(
+  import.meta.glob('@/assets/story_audy/gallery_relation/*.jpg', { eager: true })
+)
+  // Urutkan berdasarkan nama file (path-nya)
+  .sort((a, b) => {
+    const getNumber = path => parseInt(path.match(/(\d+)\.jpg$/)?.[1] || 0)
+    return getNumber(a[0]) - getNumber(b[0])
+  })
+  // Ambil hanya URL default-nya
+  .map(([_, module]) => module.default);
 
 const allImages = Object.entries(
   import.meta.glob('@/assets/story_audy/gallery_wisuda/*.jpg', { eager: true })
@@ -675,6 +686,7 @@ const allImages = Object.entries(
     <box-icon name="message-alt-dots" size="lg"></box-icon>
     <h1 class="poppins-medium tracking-widest text-3xl">Contiued My Story 🥰</h1>
   </div>
+  <p class="mt-3 poppins text-sm text-center">Gambarnya bisa di klick yaa!</p>
   <!-- title story-->
 
   <!-- continued my story -->
@@ -1604,7 +1616,7 @@ const allImages = Object.entries(
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">Love Language nya</h3>
         </div>
-        <p class="text-gray-600 mt-2">Hhnm...rakus banget si dia semua nya keknya deh tapi yg paling nonjol di dia itu physical touch, word of affirmation, qulity time </p>
+        <p class="text-gray-600 mt-2">Kayaknya dia suka semuanya deh, rakus banget 😆 Tapi yang paling kelihatan dari dia itu physical touch, words of affirmation, dan quality timee </p>
       </div>
     </div>
 
@@ -1867,7 +1879,7 @@ const allImages = Object.entries(
     <div class="w-full h-[700px] relative flex flex-row-reverse items-center justify-center gap-20">
       <div class="w-[3px] h-full bg-zinc-300 absolute top-1/2 left-1/2 transform -translate-y-1/2">
         <div
-          class="w-0 h-0 border-t-[9px] border-b-[9px] border-r-[18px] border-transparent border-r-zinc-300 absolute top-1/2 -translate-y-1/2 -left-4"
+          class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[18px] border-transparent border-l-zinc-300 absolute top-1/2 -translate-y-1/2 -right-4"
         ></div>
       </div>
 
@@ -1939,7 +1951,7 @@ const allImages = Object.entries(
       <div class="w-1/2">
         <div class="relative shadow-2xl">
           <div
-            class="w-[200px] h-[433px] absolute z-30 top-1/2 left-1/3 transform -translate-y-1/2 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[20%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
               src="@/assets/story_audy/continue_story2/perpus1.jpg"
@@ -1948,19 +1960,10 @@ const allImages = Object.entries(
             />
           </div>
           <div
-            class="w-[200px] h-[433px] absolute z-20 top-1/2 left-[5%] -translate-y-1/2 transform -rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
+            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[55%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
           >
             <img
-              src="@/assets/story_audy/continue_story2/cekcok2.jpg"
-              alt="storry_we_meet"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-          <div
-            class="w-[200px] h-[433px] absolute z-10 top-1/2 left-[60%] transform -translate-y-1/2 rotate-6 hover:rotate-0 hover:z-40 hover:scale-105 transition-all ease-in duration-200"
-          >
-            <img
-              src="@/assets/story_audy/continue_story2/cekcok1.jpg"
+              src="@/assets/story_audy/continue_story2/perpus2.jpg"
               alt="storry_we_meet"
               class="w-full h-full object-cover rounded-xl"
             />
@@ -1994,7 +1997,7 @@ const allImages = Object.entries(
         Jauh sebelum hari wisudaku dia pernah bete karena respon aku yang kurang gitu, jadi dia tanya ke aku "seberapa senang aku kalau dia datang ke wisuda aku kasih rate dari 1-10" aku jawabnya agak panjang soalnya aku kawathir sih + gaenakan juga ke dia soalnya kan di wisuda aku di unai ya aku mikirnya gimana cara dia bisa dateng ke unai jauh banget takutnya kenapa kenapa cape jugakan dll lain jadinya aku bilang "aku seneng banget kalo misalnya kamu bisa dateng ke wisuda aku, tapi ga usa di paksain ya kalo misalnya gabisa soalnya aku takut kamu kenapa kenapa di jalan" abis itu dia langsung matiin call nya wkwkwk, kalo aku pikir pikir lagi iya sih siapa yang ga bete kalo dijawabnya gitu ya padahal di udah mau effort banget aku malah nggak ngehargain effort dia, jadi akhirnya dia mutusin buat ga datang deh katanya :( sedih banget sih aku, tapi yahh aku gamau maksa juga,,tapi pas malam minggu sebelum hari-h wisuda aku dia bilang mau dateng ke wisuda aku ditemenin temennya marcela wkwk jujur aku seneng banget happyy banget gaiis hapyyy bangetttttt wkwkw, salah satu kebahagian yang ga pernah aku lupain waktu wisuda ini sih bener bener puncak rasa sayang aku ke dia udah full banget rasanya, gila tiap kali aku liat dia rasanya pengen aku peluk dia erat eratt hahahah
       </p>
       <P class="font-semibold text-center">
-        disini rasanya Tuhan ngejawab semua doa doa ku: "Tuhan aku udah mau lulus nih dari unai, dari sem 1 aku rajin belajar sampai sekarang aku jaga diri aku baik baik...taat beribadah juga, ga mainin hati perempuan. Tuhan boleh ga kasih aku perempuan yang baik sayang sama keluarganya, pokoknya ga usah aneh aneh" semua terasa begitu baik 
+        disini rasanya Tuhan ngejawab semua doa doa ku: "Tuhan aku udah mau lulus nih dari unai, dari sem 1 aku rajin belajar sampai sekarang aku jaga diri aku baik baik...taat beribadah juga, ga mainin hati perempuan. Tuhan boleh ga kasih aku perempuan yang baik sayang sama keluarganya, pokoknya ga usah aneh aneh" semua terasa begitu baik
       </P>
     </div>
     <!-- title -->
@@ -2003,7 +2006,7 @@ const allImages = Object.entries(
     <div class="mt-10 px-4">
       <h2 class="text-center poppins-medium text-2xl mb-6">Galeri Wisudaku</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div v-for="i in allImages"  class="overflow-hidden rounded-lg shadow-lg">
+        <div v-for="i in allImages" :key="i" class="overflow-hidden rounded-lg shadow-lg">
           <img :src="i" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
         <!-- Tambahkan lebih banyak foto di sini -->
@@ -2029,7 +2032,7 @@ const allImages = Object.entries(
 
     <!-- galery -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 py-3">
-      <img v-for="image in gambar" @click="kocakHandler(image)" :src="`/kocak/${image}.jpg`" alt="Image 1" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
+      <img v-for="image in 50" :key="image" @click="kocakHandler(image)" :src="`/kocak/${image}.jpg`" alt="Image 1" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
       <!-- Tambahkan gambar lain sesuai kebutuhan -->
     </div>
     <!-- galery -->
@@ -2041,7 +2044,7 @@ const allImages = Object.entries(
     <div class="relative pt-5">
       <h1 class="poppins-medium tracking-widest text-3xl"></h1>
       <p class="mt-3 poppins text-sm">
-        Allow..wuahh gak keresa ya udah sampai sini aja ceritanya, to be honest aku ga sanggup lagi sih buat ceritain lanjutan ceritanya soalnya abis ini lanjutan ceritanya bisa buat aku nangis banget wkwk. untuk sampai sini aja aku udah nangis berapa kali yaa...tau dehh gak ngitungg heheheh lebih dari 10 belasan sih kyknya..gakuat banget jujur, buat nyari nyari dokumentasi dokumnetasi cerita kami, aku pernah tuh buka laptop mau lanjutin cerita ini tpi malah begong sampai berjam jam abis itu nangiss hahhaha akhirnya ga sanggup buat lanjutin cerita ini dan jadinya rebahan seharian makanya lama banget ini aku selesaiinyaa karena kebanyakan nangis nyaaa. jadi abis ini ceritanya mungkin ada yang salah sedikit atau aku lupa lupa maaf yaa, soalnya cuma sebatas ingatan aku aja 
+        Allow..wuahh gak keresa ya udah sampai sini aja ceritanya, to be honest aku ga sanggup lagi sih buat ceritain lanjutan ceritanya soalnya abis ini lanjutan ceritanya bisa buat aku nangis banget wkwk. untuk sampai sini aja aku udah nangis berapa kali yaa...tau dehh gak ngitungg heheheh lebih dari 10 belasan sih kyknya..gakuat banget jujur, buat nyari nyari dokumentasi dokumnetasi cerita kami, aku pernah tuh buka laptop mau lanjutin cerita ini tpi malah begong sampai berjam jam abis itu nangiss hahhaha akhirnya ga sanggup buat lanjutin cerita ini dan jadinya rebahan seharian makanya lama banget ini aku selesaiinyaa karena kebanyakan nangis nyaaa. jadi abis ini ceritanya mungkin ada yang salah sedikit atau aku lupa lupa maaf yaa, soalnya cuma sebatas ingatan aku aja
       </p>
       <p class="mochiy tracking-widest text-xl mt-1">Nyamper Dia ke BLOK M</p>
       <p class="poppins text-sm">
@@ -2149,7 +2152,7 @@ const allImages = Object.entries(
       <p class="poppins mt-2 text-sm text-center">"dia ngerasa flat banget, kalu misalnya effort aku masih kurang :("</p>
       <p class="poppins mt-2 text-sm text-center">"pdhl masih baru tapi jadian tpi sparkle, percikan dri cinta itu ga kerasa"</p>
       <p class="poppins mt-2 text-sm text-center">
-        aku ngerasa ngedown banget semua yg aku overthinking dri kemarin kemarinnya terjadi, aku cuma bisa ngeiyain semua kata kata dia...dengan keadaan aku yang shock itu dan otak aku yang lgi kosong aku gatau harus ngejawab apa, aku ga bisa cari pembelaan apa apa lagi lemes banget rasanyaaa mau nangisss, sakit banget, rasanya gamau percaya dengan apa yang terjadi huuuuuu....setelah call itu aku masih coba buat ngeyakinin dia, tpi tetep aja :((( gagabisa..rasanya kalo mmg semua ini terjadi karena memang gara gara kesalahan aku dan juga cara treat dan kurangnya effort aku mungkin aku pantes buat dapetin ini :( tpi i don't know juga sihh rasanya sakit bangettttt, aku cuma berharap kalau semua keputusan dia mmg rill dari dia ga ada campur tangan external dari luar 
+        aku ngerasa ngedown banget semua yg aku overthinking dri kemarin kemarinnya terjadi, aku cuma bisa ngeiyain semua kata kata dia...dengan keadaan aku yang shock itu dan otak aku yang lgi kosong aku gatau harus ngejawab apa, aku ga bisa cari pembelaan apa apa lagi lemes banget rasanyaaa mau nangisss, sakit banget, rasanya gamau percaya dengan apa yang terjadi huuuuuu....setelah call itu aku masih coba buat ngeyakinin dia, tpi tetep aja :((( gagabisa..rasanya kalo mmg semua ini terjadi karena memang gara gara kesalahan aku dan juga cara treat dan kurangnya effort aku mungkin aku pantes buat dapetin ini :( tpi i don't know juga sihh rasanya sakit bangettttt, aku cuma berharap kalau semua keputusan dia mmg rill dari dia ga ada campur tangan external dari luar
       </p>
       <p class="poppins mt-2 text-sm text-center">
         setelah semua itu terjadi aku....gatau...aku gabisa ungkapin dengan kata kata, hidup ini terus berjalan....hari demi hari menyesakkan rasanya mau balik ke october lagi..ngulang dari awal, awal ketemu dia huuhuu...jujur aku mimpiin dia berkali kali awal aku bangun rasanya nyesek bangettt, ga mood ngapa-ngapain maunya rebahan, lemes banget gada tenaga. kadang kalo aku lagi kesepian banget aku call olin buat dengerin cerita dia, cuma ke olin aku bisa cerita. waktu akhirnya nyembuhin luka luka ini dan semua yang aku rasain aku tulis di dalam cerita ini sekarang, kadang masih suka doa ke Tuhan: "Tuhan boleh ga sih aku minta hal egois hahaha minta hal yang gamungkin terjadi ini bisa terjadi"
@@ -2171,7 +2174,7 @@ const allImages = Object.entries(
       </p>
       <p class="poppins mt-1 text-sm text-center">Yesaya 55:8 Sebab rancangan-Ku bukanlah rancanganmu, dan jalanmu bukanlah jalan-Ku, demikianlah firman TUHAN.</p>
       <p class="poppins mt-2 text-sm text-center">
-        Terimakasih sekali lagi ke orang yang pernah aku cintai, yang pernah aku panggil sayang, yang pernah aku sayang sebegitu sayangnya, terimakasih orang yang pernah aku panggil cantik, terimakasih....dari kamu aku belajar bahagia dari kamu juga aku merasakan rasa sakit ini, maaff kyknya udah kebanyak kata maaf, tapi cuma kata maaf yang bisa aku ucapin, maaf ya setelah aku lihat kyknya mmg iya kekurangan aku banyak banget..maaf yaa sebosen itu yaaa :( effort aku belum terlalu terlihat/menonjol mungkin karena mmg aku belum punya apa apa...kadang aku pengen buat ketemu dia tpi abang nyampe rumah jam 8.30 an ga enak juga mau ajak dia ketemu minggu kadang motornya kepake dan dia juga sering di tangsel kalau minggu dulu belum punya duit sendiri buat ngajak dia jalan sekarang udah punya tapi malah...yahh:( maaf ya belum bisa jadi terbaik yang kamu mau. kita sama sama percaya sama Tuhan kan :) tapi semoga Tuhan ga nyuruh buat kita pisah dan saling menutup perasaan kita:( aku juga percaya semua yang kita lalui itu bukan buat main main tapi bentuk sebuah keseriusan.
+        Terimakasih sekali lagi ke orang yang pernah aku cintai, yang pernah aku panggil sayang, yang pernah aku sayang sebegitu sayangnya, terimakasih orang yang pernah aku panggil cantik, terimakasih....dari kamu aku belajar bahagia dari kamu juga aku merasakan rasa sakit ini, maaff kyknya udah kebanyak kata maaf, tapi cuma kata maaf yang bisa aku ucapin, maaf ya setelah aku lihat kyknya mmg iya kekurangan aku banyak banget..maaf yaa sebosen itu yaaa :( effort aku belum terlalu terlihat/menonjol mungkin karena mmg aku belum punya apa apa...kadang aku pengen buat ketemu dia tpi abang nyampe rumah jam 8.30 an ga enak juga mau ajak dia ketemu minggu kadang motornya kepake dan dia juga sering di tangsel, dulu belum punya duit sendiri buat ngajak dia jalan sekarang udah punya duit tapi malah...yahh:( maaf ya belum bisa jadi terbaik yang kamu mau. kita sama sama percaya sama Tuhan kan :) tapi semoga Tuhan ga nyuruh buat kita pisah dan saling menutup perasaan kita:( aku juga percaya semua yang kita lalui itu bukan buat main main tapi bentuk sebuah keseriusan.
       </p>
 
     </main>
@@ -2209,7 +2212,7 @@ const allImages = Object.entries(
   <!-- video -->
 
   <!-- my favorite image -->
-  <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 px-4">
+  <!-- <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 px-4">
     <div class="flex items-center">
       <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
         <img
@@ -2289,8 +2292,32 @@ const allImages = Object.entries(
         />
       </div>
     </div>
-  </main>
+  </main> -->
   <!-- my favorite image -->
+
+  <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 px-6">
+  <template v-for="(imgSrc, index) in gallery_relation" :key="index">
+    <div
+      :class="[
+        'flex',
+        index % 3 === 0 ? 'items-start' : index % 3 === 1 ? 'items-center' : 'items-end',
+        index % 7 === 0 ? 'md:col-span-2' : '',
+        index === 25 ? 'md:col-start-4 md:col-end-6' : ''
+      ]"
+    >
+      <div
+        class="aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+      >
+        <img
+          :src="imgSrc"
+          alt="story_image"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in-out duration-300"
+        />
+      </div>
+    </div>
+  </template>
+</main>
+
 
 
 </template>
