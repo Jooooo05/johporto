@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed  } from 'vue'
+import { ref, nextTick, computed  } from 'vue'
 
 const showCard = ref(false)
 const imageSrc = ref('')
@@ -12,6 +12,12 @@ const showCardHandler = (no_folder, number) => {
 
 const hideCardHandler = () => {
   showCard.value = false
+}
+
+const continued_story = (no) => {
+  showCard.value = true;
+  imageSrc.value = `/continued_story/${no}.jpg`
+
 }
 
 const kocakHandler = (no) => {
@@ -30,7 +36,28 @@ const allImages = Object.entries(
     return getNumber(a[0]) - getNumber(b[0])
   })
   // Ambil hanya URL default-nya
-  .map(([_, module]) => module.default)
+  .map(([_, module]) => module.default);
+
+  const playlist = [
+    '/sound/sound1.mp3',
+    '/sound/sound2.mp3'
+  ];
+
+  const currentTrackIndex = ref(0);
+  const currentTrack = ref(playlist[currentTrackIndex.value]);
+  const audioPlayer = ref(null);
+
+  function playNext() {
+    if (currentTrackIndex.value < playlist.length - 1) {
+      currentTrackIndex.value++
+      currentTrack.value = playlist[currentTrackIndex.value]
+      // Tunggu update DOM selesai, baru play
+      nextTick(() => {
+        audioPlayer.value.load()
+        audioPlayer.value.play()
+      });
+    }
+  }
 </script>
 
 <template>
@@ -632,7 +659,11 @@ const allImages = Object.entries(
         <span class="font-semibold">ini ada lagu sambil dengerin yah</span>
       </p>
       <div class="mt-3">
-        <audio src="/sound/sound1.mp3" controls></audio>
+        <audio ref="audioPlayer" controls @ended="playNext">
+          <source :src="currentTrack" type="audio/mpeg" />
+          Browser tidak mendukung audio.
+        </audio>
+        <!-- <audio src="/sound/sound1.mp3" controls></audio> -->
       </div>
     </div>
     <!-- title -->
@@ -649,7 +680,7 @@ const allImages = Object.entries(
   <!-- continued my story -->
   <main class="mt-8 mb-10">
     <div class="grid grid-cols-4 gap-1">
-      <div
+      <div @click="continued_story(1)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/1.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -662,7 +693,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(2)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/2.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -675,7 +706,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(3)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/3.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -688,7 +719,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(4)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/4.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -701,7 +732,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(5)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/5.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -714,7 +745,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(6)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/6.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -727,7 +758,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(7)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/7.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -740,7 +771,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(8)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/8.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -753,7 +784,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(9)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/9.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -766,7 +797,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(10)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/10.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -779,7 +810,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(11)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/11.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -793,7 +824,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(12)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/12.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -806,7 +837,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(13)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/13.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -819,7 +850,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(14)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/14.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -832,7 +863,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(15)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/15.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -846,7 +877,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(16)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/16.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -859,7 +890,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(17)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/17.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -872,7 +903,7 @@ const allImages = Object.entries(
           </p>
         </div>
       </div>
-      <div
+      <div @click="continued_story(18)"
         class="w-full h-[350px] bg-[url('@/assets/story_audy/continue_story/18.png')] bg-cover bg-center cursor-pointer"
       >
         <div
@@ -1314,7 +1345,7 @@ const allImages = Object.entries(
           </div>
         </div>
 
-        <div class="mt-2 poppins text-sm text-center">Hahaha gataula hari hari gelut bete berantemm mulu, tpi ngangenin bgtt yaaah... :(</div>
+        <div class="mt-2 poppins text-sm text-center">Hahaha gataula hari hari gelut, bete, berantemm mulu, tpi ngangenin bgtt yaaah... :(</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
@@ -1435,7 +1466,7 @@ const allImages = Object.entries(
           </div>
         </div>
 
-        <div class="mt-2 poppins text-sm text-center">ini agak kumpulan ceritanya agak random sih heheh tpi lucu lucu ko baca ajaa</div>
+        <div class="mt-2 poppins text-sm text-center">ini agaknya kumpulan ceritanya agak random sih heheh tpi lucu lucu ko baca ajaa</div>
       </div>
 
       <div class="w-1/2 h-[600px] p-8 rounded-xl flex flex-col items-center justify-between">
@@ -1492,7 +1523,7 @@ const allImages = Object.entries(
           </div>
         </div>
 
-        <div class="mt-2 poppins text-sm text-center">Another pembicaraan lucu, dan seperti biasa ciri khas ngambekny betenya ituu ngangenin :(</div>
+        <div class="mt-2 poppins text-sm text-center">Another pembicaraan lucu, dan seperti biasa ciri khas ngambekny betenya ituu, kangen yaa:(</div>
       </div>
     </div>
 
@@ -1515,7 +1546,7 @@ const allImages = Object.entries(
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">Makanan yang dia suka</h3>
         </div>
-        <p class="text-gray-600 mt-2">Dia bilang sebenarnya dia suka semua makanan kalo orang pada nanya katanya dia bakalan nanya suka sushi tapi katanya dia suka makan jengkol hahha kalo makanan yang dia ga suka katnya coklat sih </p>
+        <p class="text-gray-600 mt-2">Dia bilang sebenarnya dia suka semua makanan kalo orang pada nanya katanya dia bakalan nanya suka sushi tapi katanya dia suka makan jengkol hahha kalo makanan yang dia ga suka coklat sih </p>
       </div>
 
       <!-- Card 2 -->
@@ -1523,7 +1554,7 @@ const allImages = Object.entries(
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">Warna yang dia suka </h3>
         </div>
-        <p class="text-gray-600 mt-2">Suka banget sama warna pink hahha, barang barangnya pink, pinky girl, suka sama benda benda imutt</p>
+        <p class="text-gray-600 mt-2">Suka banget sama warna pink hahha, barang barangnya pink, pinky gurlll, suka sama benda benda imutt</p>
       </div>
 
       <!-- Card 3 -->
@@ -1531,21 +1562,21 @@ const allImages = Object.entries(
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">Silsilah Keluarganya</h3>
         </div>
-        <p class="text-gray-600 mt-2">Siboru, anak terakhir dari 4 bersaudara 2 kaka kembar Angelina + Angelisa panggilannya ka jisa & ka jina, bang Hary anak 3 satu satunya anak laki - laki anak kesayangan ortu katanya wkwk, dan dia terakhir <span class="font-bold">audrey febriany silalahi</span></p>
+        <p class="text-gray-600 mt-2">Siboru, anak terakhir dari 4 bersaudara 2 kaka kembar Angelina + Angelisa panggilannya ka jisa & ka jina, bang Hary anak ke 3 satu satunya anak laki - laki dan anak kesayangan ortu katanya wkwk, dan dia terakhir <span class="font-bold">audrey febriany silalahi</span></p>
       </div>
       <!-- Card 4 -->
       <div class="bg-yellow-100 border border-gray-200 rounded-lg shadow-lg p-6">
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">Lagu kesukaan dia</h3>
         </div>
-        <p class="text-gray-600 mt-2">Banyak banget si lagu yg dia suka kalau ditanya suka bingung katanya wkwk, trus dia suka semua lagu one direction, tpi pas aku tanyain katanya dia terlintas satu lagu yg paling dia suka "gita gutawa - harmoni cinta" dia suka bosenan banget sama lagu tpi kalo sama lagu ini gatau katanya gabisa bosen musiknya, ambience, lirik, suara "gemes lagunya" </p>
+        <p class="text-gray-600 mt-2">Banyak banget si lagu yg dia suka kalau ditanya suka bingung katanya wkwk, trus dia suka semua lagu one direction pernah buat top ten list tpi bisa berubah ubah hahha, tpi pas aku tanyain katanya dia terlintas satu lagu yg paling dia suka "gita gutawa - harmoni cinta" she said dia suka bosenan banget sama lagu tpi kalo sama lagu ini gatau katanya gabisa bosen! musiknya, ambience, lirik, suara, "gemes lagunya" </p>
       </div>
       <!-- Card 5 -->
       <div class="bg-blue-100 border border-gray-200 rounded-lg shadow-lg p-6">
         <div class="flex items-center justify-between">
           <h3 class="mochiy tracking-widest text-xl font-semibold text-gray-800">2 Bayik kesayangannya</h3>
         </div>
-        <p class="text-gray-600 mt-2">Selalu jadi pengasuh bayi kalo udah di keluarganya karena 2 kakanya udah nikah sama punya bayi yang pertama itu "gracia" katanya audrey versi kecil karena kelakuan mereka mirip banget pas dia masih kecil bisa di bilang klonannya wkwkw, kedua "abram" si abram agak pendiam tpi mereka lucu lucu bangettt asliii! gemeshnya waktu pertama dikenalin wkwkwk</p>
+        <p class="text-gray-600 mt-2">Selalu jadi pengasuh bayi kalo udah di keluarganya karena 2 kakanya udah nikah sama punya bayi yang pertama itu "gracia" katanya audrey versi kecil karena kelakuan mereka mirip banget pas dia masih kecil bisa di bilang klonannya wkwkw, kedua "abram" si abram agak pendiam tpi mereka lucu lucu bangettt asliii! ehh ada satu lagi sih adenya gracia lupa siapa namnyaa hehehe, gemesh bangettt waktu pertama dikenalin wkwkwk</p>
       </div>
       <!-- Card 5 -->
       <div class="bg-pink-100 border border-gray-200 rounded-lg shadow-lg p-6">
@@ -1598,7 +1629,7 @@ const allImages = Object.entries(
       </div>
 
       <div class="w-1/2 h-full bg-white shadow-lg p-8 rounded-xl">
-        <h3 class="mochiy tracking-widest text-xl">First date? Ketemu pertama?</h3>
+        <h3 class="mochiy tracking-widest text-xl">First date? Kali pertama ketemu</h3>
         <p class="poppins text-sm tracking-wider mt-1">10 December</p>
 
         <p class="poppins text-sm mt-1">
@@ -1962,7 +1993,9 @@ const allImages = Object.entries(
       <p class="mt-5 poppins text-sm text-center">
         Jauh sebelum hari wisudaku dia pernah bete karena respon aku yang kurang gitu, jadi dia tanya ke aku "seberapa senang aku kalau dia datang ke wisuda aku kasih rate dari 1-10" aku jawabnya agak panjang soalnya aku kawathir sih + gaenakan juga ke dia soalnya kan di wisuda aku di unai ya aku mikirnya gimana cara dia bisa dateng ke unai jauh banget takutnya kenapa kenapa cape jugakan dll lain jadinya aku bilang "aku seneng banget kalo misalnya kamu bisa dateng ke wisuda aku, tapi ga usa di paksain ya kalo misalnya gabisa soalnya aku takut kamu kenapa kenapa di jalan" abis itu dia langsung matiin call nya wkwkwk, kalo aku pikir pikir lagi iya sih siapa yang ga bete kalo dijawabnya gitu ya padahal di udah mau effort banget aku malah nggak ngehargain effort dia, jadi akhirnya dia mutusin buat ga datang deh katanya :( sedih banget sih aku, tapi yahh aku gamau maksa juga,,tapi pas malam minggu sebelum hari-h wisuda aku dia bilang mau dateng ke wisuda aku ditemenin temennya marcela wkwk jujur aku seneng banget happyy banget gaiis hapyyy bangetttttt wkwkw, salah satu kebahagian yang ga pernah aku lupain waktu wisuda ini sih bener bener puncak rasa sayang aku ke dia udah full banget rasanya, gila tiap kali aku liat dia rasanya pengen aku peluk dia erat eratt hahahah
       </p>
-      <P class="font-semibold text-center">disini rasanya Tuhan ngejawab semua doa doa ku, semua kekhawatiran ku di buang sama Tuhan</P>
+      <P class="font-semibold text-center">
+        disini rasanya Tuhan ngejawab semua doa doa ku: "Tuhan aku udah mau lulus nih dari unai, dari sem 1 aku rajin belajar sampai sekarang aku jaga diri aku baik baik...taat beribadah juga, ga mainin hati perempuan. Tuhan boleh ga kasih aku perempuan yang baik sayang sama keluarganya, pokoknya ga usah aneh aneh" semua terasa begitu baik 
+      </P>
     </div>
     <!-- title -->
 
@@ -2103,7 +2136,7 @@ const allImages = Object.entries(
 
     <main class="mt-5">
       <p class="mt-3 poppins text-sm text-center">
-        Akhirnya sampai ke part ini juga ya, gakuat banget ceritainnyaaa huhuu...bingung banget mau ceritaain yang ini gimana yaa :( okeeee..jadi kyk yang aku bilang kalau pacaran itu ga tentang bahagianya doang, ga cuman ttg gemesnya doang, dan yahh tentu kami sering berantem but it's okay semua itu proses untuk kebentuknya sebuah hubungan yang kita mau nantinya ada yang kami ganyaman kami obrolin baik baik, satu persatu masalah kami lalui aku belajar lagi untuk dapat jadi lebih baik kedapannya aku belajar gimana berkomunikasi dengan baik kedia, aku yang cemburuan tapi aku percaya kalo misalnya dia punya Personal boundariesnya yang buat aku yakin bahwa dia gabakalan aneh aneh walaupun dia punya banyak teman cowo and i know his se friendly itu and i know she has a male bestfriend tapi aku percaya dan ga pernah permasalahin itu aku ga pernah kekang dia dengan aturan apapun itu karena ya aku percaya ke dia yang buat aku merasa special dan beda dari yang lain.
+        Akhirnya sampai ke part ini juga ya, gakuat banget ceritainnyaaa huhuu...bingung banget mau ceritaain yang ini gimana yaa :( okeeee..jadi kyk yang aku bilang kalau pacaran itu ga tentang bahagianya doang, ga cuman ttg gemesnya doang, dan yahh tentu kami sering berantem but it's okay semua itu proses untuk kebentuknya sebuah hubungan yang kita mau nantinya ada yang kami ganyaman kami obrolin baik baik, satu persatu masalah kami lalui aku belajar lagi untuk dapat jadi lebih baik kedapannya, aku belajar gimana berkomunikasi dengan lebih baik kedia, aku yang cemburuan tapi aku percaya kalo misalnya dia punya personal boundariesnya yg kuat, yang buat aku yakin bahwa dia gabakalan aneh aneh walaupun dia punya banyak teman cowo and i know his se friendly itu and i know she has a male bestfriend tapi aku percaya dan ga pernah permasalahin itu aku ga pernah kekang dia dengan aturan apapun itu karena ya,,aku percaya ke dia yang buat aku merasa special dan beda dari yang lain.
       </p>
       <p class="mt-2 poppins text-sm text-center">
         hingga waktu itu aku pernah bete, soalnya aku mau cerita ke dia, aku masuk ke tahap final interview, aku udah excited banget itu mau cerita kedia, tapi dia gabales bales sampai sore deh baru dia bales. mungkin disini sih titik awalnya titik kesalahan aku...aku terlalu terburu buru...aku hanyut dengan rasa kesal sesaat aku ga berpikir panjang mungkin aja harinya juga lagi cape, dia mungkin lagi hectic hecticnya tapi akuu malahh ngebuat perasaan dia makin campur aduk..tpi aku cuma mau komunikasiin rasa kesalnya aku, bukan yg gimana atau mau marah gimana gimana...dan akhirnya malah jadi makin runyamm permasalahanya ga selesai hari itu, soalnya dia cape dia minta waktu untuk sendiri, harusnya aku lebih sabar lagi sih waktu itu..hrsnya aku paksa minta buat ketemu obrolin baik baik, yg mungkin aja bisa buat hasilnya bisa berbeda, yahh sudah berlalu juga sih...mungkin dulu gara gara keadaan aku juga lgi banyak pikiran dan rasa stress yg menumpuk belum dapet jawaban jawaban dri Tuhan (kerja) itu memperngaruhi cara aku berpikir dan pengambilan keputusan, aku jadi gampang cape akhirnya setelah dia coba nenangin diri akhirnya dia call aku dan ngehubungin aku lagi, kami gobrol baik baik masalah ini pun selesai kami saling minta maaf, tapi keesokanya aku ngerasa dia beda banget, kyk engga dirinya lagi..rasanya kyk ada gap gitu di antara kami, dan juga kami jarang banget call karena ada satu dua hal lah aku gatau juga kenapa...dan iya kami semakin ada jarak, aku ngerasa kyk ada yang salah, aku ngerasa kyk ada sesuatu yang berbeda dri dia..akhirnya aku beraniin diri buat nanya kyk nanya keadaanya "gapapakan?", "kalo misalnya ada kenapa kenapa bilang aj ya?", "atau mungkin ada akunya salah gitu?", "gapapa ya buat di obrolin baik baik" dan di hari itu dia benar benar ga ada manggil aku dengan panggilan sayang seperti biasanya dan aku bener bener ngerasa kayak memang ada sesuatu gituu.
@@ -2119,25 +2152,27 @@ const allImages = Object.entries(
         aku ngerasa ngedown banget semua yg aku overthinking dri kemarin kemarinnya terjadi, aku cuma bisa ngeiyain semua kata kata dia...dengan keadaan aku yang shock itu dan otak aku yang lgi kosong aku gatau harus ngejawab apa, aku ga bisa cari pembelaan apa apa lagi lemes banget rasanyaaa mau nangisss, sakit banget, rasanya gamau percaya dengan apa yang terjadi huuuuuu....setelah call itu aku masih coba buat ngeyakinin dia, tpi tetep aja :((( gagabisa..rasanya kalo mmg semua ini terjadi karena memang gara gara kesalahan aku dan juga cara treat dan kurangnya effort aku mungkin aku pantes buat dapetin ini :( tpi i don't know juga sihh rasanya sakit bangettttt, aku cuma berharap kalau semua keputusan dia mmg rill dari dia ga ada campur tangan external dari luar 
       </p>
       <p class="poppins mt-2 text-sm text-center">
-        setelah semua itu terjadi aku....gatau...aku gabisa ungkapin dengan kata kata, hidup ini terus berjalan....hari demi hari menyesakkan rasanya mau balik ke october lagi ngulang dari awal, awal ketemu dia huuhuu jujur aku mimpiin dia berkali kali awal aku bangun rasanya nyesek bangettt, ga mood ngapa-ngapain maunya rebahan. kadang kalo aku lagi kesepian banget aku call olin dengerin cerita dia, cuma ke olin aku bisa cerita waktu akhirnya nyembuhin luka ini dan semua yang aku rasain aku tulis di dalam cerita ini sekarang, kadang masih suka doa ke Tuhan "Tuhan boleh ga sih aku minta hal egois hahaha minta hal yang gamungkin terjadi ini bisa terjadi"
+        setelah semua itu terjadi aku....gatau...aku gabisa ungkapin dengan kata kata, hidup ini terus berjalan....hari demi hari menyesakkan rasanya mau balik ke october lagi..ngulang dari awal, awal ketemu dia huuhuu...jujur aku mimpiin dia berkali kali awal aku bangun rasanya nyesek bangettt, ga mood ngapa-ngapain maunya rebahan, lemes banget gada tenaga. kadang kalo aku lagi kesepian banget aku call olin buat dengerin cerita dia, cuma ke olin aku bisa cerita. waktu akhirnya nyembuhin luka luka ini dan semua yang aku rasain aku tulis di dalam cerita ini sekarang, kadang masih suka doa ke Tuhan: "Tuhan boleh ga sih aku minta hal egois hahaha minta hal yang gamungkin terjadi ini bisa terjadi"
       </p>
-      <p class="poppins mt-2 text-sm text-center">"Tuhan bisa ga misalnya goboleh ada cowo yang dateng ke dia wkwkw"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan bisa ga misalnya goboleh ada cowo loading yang dateng ke dia wkwkw"</p>
       <p class="poppins mt-2 text-sm text-center">"Tuhan to much ga ya kalo misalnya aku datang ke mamanya trus pegang tangannya bilang ma audy jahatin aku, tpi semua itu ga bener kan maa! aku lamar dia sekarang ya maa! AOKWOKWO"</p>
       <p class="poppins mt-2 text-sm text-center">"Tuhan aku kuat ga ya liat dia dengan yg baru :("</p>
-      <p class="poppins mt-2 text-sm text-center">"Tuhan aku masih belum bisa lupain dia lohh:( gimana inii??"</p>
-      <p class="poppins mt-2 text-sm text-center">"Tuhan aku bakalan baik baik aja ya kedepannya? Tuhan aku harus gimana ini? Tuhan?? Tuhannn....😭"</p>
-      <p class="poppins mt-2 text-sm text-center">"Tuhan aku gakuat hidup aku sakit bangettt :((("</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku masih belum bisa lupain dia lohh:( gimana ya inii??"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku bakalan baik baik aja ga ya kedepannya? Tuhan aku harus gimana ini? Tuhan?? Tuhannn....😭"</p>
+      <p class="poppins mt-2 text-sm text-center">"Tuhan aku gakuattttt hidup aku sakit bangettt :((("</p>
       <p class="poppins mt-2 text-sm text-center">
-        Hingaa waktu yang nyembuhim semua luka luka aku ini, aku udah gatau kabar tentag dia, aku udah gapernah dengar suara dia, aku gakuat untuk buka instagram, takut banget kambuh rasa sakit ini, terkadang aku masih suka relapse, sampai tiba tiba dia datang lagi Nyeletuk "semlekom! sombong amatt" jujur disitu aku berharap lagi kalau misalnya kami bisa kembali ke waktu yang dulu lagi, aku nanya kabar dia, dia juga nanya kabar aku tapi entah kenapa rasanya dia berbeda, padahal ellen bilang kalo dia kangen tpi kenapa sikap dia kyk gini yaa shit mann, shiballl wkwkw, dikasih mixed signal gini yaaak, fyuhhhh agak sakit juga yahhh...kyk aku tuh lagi nari di telapak tangannya dia wkwkwk.
+        Hingaa waktu yang nyembuhim semua luka luka aku ini, aku udah gatau kabar tentag dia, aku udah gapernah dengar suara dia...kadang aku gakuat untuk buka instagram, takut banget kambuh rasa sakit ini, terkadang aku masih suka relapse, sampai tiba tiba dia datang lagi Nyeletuk "semlekom! sombong amatt" jujur disitu aku berharap lagi kalau misalnya kami bisa kembali ke waktu yang dulu lagi, aku nanya kabar dia, dia juga nanya kabar aku tapi entah kenapa rasanya dia berbeda, padahal ellen bilang kalo dia kangen tpi kenapa sikap dia kyk gitu yaa? shit mann, shiballl la wkwkw, dikasih mixed signal gini yaaak, fyuhhhh agak sakit juga sihhh...kyk...
       </p>
       <p class="poppins mt-2 text-sm text-center">
-        sekali lagi aku gada bilang dia jahat, ini 100% pov dari aku sendiri, perasaan manusia ini ribet banget susah untuk di mengerti banyak faktor yang memperngaruhi, baik dari keluarga, pertemanan dan juga lingkungan sekitar mereka. dia juga punya pemikiran sendiri, punya perasaannya yang ga bisa aku mengerti atau akau rasain, aku ga bisa ngejudge apa apa. semua sudah terjadi..aku percaya rencana Tuhan..aku selalu berdoa ke Tuhan untuk berikan yang terbaik ke aku
+        sekali lagi aku gada bilang dia jahat, ini 100% pov dari aku sendiri, perasaan manusia itu ribet banget susah untuk di mengerti banyak faktor yang memperngaruhi, baik dari keluarga, pertemanan dan juga lingkungan sekitar mereka. dia juga punya pemikiran sendiri, punya perasaannya yang ga bisa aku mengerti atau aku rasain, aku ga bisa ngejudge apa apa. semua sudah terjadi..aku percaya rencana Tuhan..aku selalu berdoa ke Tuhan untuk berikan yang terbaik ke aku
       </p>
       <p class="poppins mt-1 text-sm text-center">
         Yeremia 29:11 Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan.
       </p>
       <p class="poppins mt-1 text-sm text-center">Yesaya 55:8 Sebab rancangan-Ku bukanlah rancanganmu, dan jalanmu bukanlah jalan-Ku, demikianlah firman TUHAN.</p>
-      <p class="poppins mt-2 text-sm text-center">Terimakasih sekali lagi ke orang yang pernah aku cintai, yang pernah aku panggil sayang, yang pernah aku sayang sebegitu sayangnya, terimakasih orang yang pernah aku panggil cantik, terimakasih....dari kamu aku belajar bahagia dari kamu juga aku merasakan rasa sakit ini, maaff kyknya udah kebanyak kata maaf, tapi cuma kata maaf yang bisa aku ucapin, maaf ya belum bisa jadi terbaik yang kamu mau kita sama sama percaya sama Tuhan kan :) tapi semoga Tuhan ga nyuruh buat kita pisah dan saling menutup perasaan kita:( aku juga percaya semua yang kita lalui itu bukan buat main main tapi bentuk sebuah keseriusan.</p>
+      <p class="poppins mt-2 text-sm text-center">
+        Terimakasih sekali lagi ke orang yang pernah aku cintai, yang pernah aku panggil sayang, yang pernah aku sayang sebegitu sayangnya, terimakasih orang yang pernah aku panggil cantik, terimakasih....dari kamu aku belajar bahagia dari kamu juga aku merasakan rasa sakit ini, maaff kyknya udah kebanyak kata maaf, tapi cuma kata maaf yang bisa aku ucapin, maaf ya setelah aku lihat kyknya mmg iya kekurangan aku banyak banget..maaf yaa sebosen itu yaaa :( effort aku belum terlalu terlihat/menonjol mungkin karena mmg aku belum punya apa apa...kadang aku pengen buat ketemu dia tpi abang nyampe rumah jam 8.30 an ga enak juga mau ajak dia ketemu minggu kadang motornya kepake dan dia juga sering di tangsel kalau minggu dulu belum punya duit sendiri buat ngajak dia jalan sekarang udah punya tapi malah...yahh:( maaf ya belum bisa jadi terbaik yang kamu mau. kita sama sama percaya sama Tuhan kan :) tapi semoga Tuhan ga nyuruh buat kita pisah dan saling menutup perasaan kita:( aku juga percaya semua yang kita lalui itu bukan buat main main tapi bentuk sebuah keseriusan.
+      </p>
 
     </main>
   <!-- last part -->
@@ -2149,89 +2184,113 @@ const allImages = Object.entries(
   </div>
   <!-- title -->
 
+  <!-- video -->
+  <div class="relative h-[650px] flex items-center justify-center">
+    <!-- Gambar 1 -->
+    <video
+      src="@/assets/story_audy/gallery_relation/video1.mp4"
+      class="w-[300px] h-[560px] object-cover rounded-xl shadow-xl transform rotate-[-6deg] -translate-x-[220px] absolute z-10 hover:scale-105 hover:rotate-0 transition-all duration-300 hover:z-50"
+      autoplay
+      muted
+      loop
+      playsinline>
+    </video>
+
+    <!-- Gambar 3 -->
+    <video
+      src="@/assets/story_audy/gallery_relation/video2.mp4"
+      class="w-[300px] h-[560px] object-cover rounded-xl shadow-xl transform rotate-[6deg] translate-x-[220px] absolute z-10 hover:scale-105 hover:rotate-0 transition-all duration-300 hover:z-50"
+      autoplay
+      muted
+      loop
+      playsinline>
+    </video>
+  </div>
+  <!-- video -->
+
   <!-- my favorite image -->
-<main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 px-4">
-  <div class="flex items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/1.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+  <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 px-4">
+    <div class="flex items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/1.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="flex items-start">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/10.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="flex items-start">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/10.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="md:col-span-2 flex items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/3.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="md:col-span-2 flex items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/3.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="flex items-end">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/13.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="flex items-end">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/13.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="flex items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/5.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="flex items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/5.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="md:col-span-2 flex items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/6.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="md:col-span-2 flex items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/6.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="md:col-span-2 flex justify-center items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/8.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="md:col-span-2 flex justify-center items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/8.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="md:col-start-5 md:col-end-7 flex items-center">
-    <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-      <img
-        src="@/assets/story_audy/audystory_img_kecil/4.png"
-        alt="selfie_time"
-        class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
-      />
+    <div class="md:col-start-5 md:col-end-7 flex items-center">
+      <div class="aspect-[3/2] w-full overflow-hidden rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
+        <img
+          src="@/assets/story_audy/audystory_img_kecil/4.png"
+          alt="selfie_time"
+          class="w-full h-full object-cover transform hover:scale-110 transition-all ease-in duration-200"
+        />
+      </div>
     </div>
-  </div>
-</main>
-<!-- my favorite image -->
+  </main>
+  <!-- my favorite image -->
 
 
 </template>
