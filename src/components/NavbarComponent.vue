@@ -23,12 +23,12 @@
     <main class="flex justify-between items-center ">
 
       <div class="poppins relative z-50">
-        <p @click="openAudystorry" class="text-base font-medium">Yonatan's</p>
-        <!-- <p class="text-base font-medium">Yonatan's</p> -->
+        <!-- <p @click="openAudystorry" class="text-base font-medium">Yonatan's</p> -->
+        <p class="text-base font-medium">Yonatan's</p>
         <p class="text-sm">Web Developer</p>
       </div>
 
-      <RouterLink v-if="isAudyStorryOpen" to="/audystory" class="px-5 py-2 bg-pink-600 text-white rounded-lg hover:bg-white hover:border-2 hover:border-pink-600 hover:text-pink-800 transition-all ease-in">Audyy story</RouterLink>
+      <!-- <RouterLink v-if="isAudyStorryOpen" to="/audystory" class="px-5 py-2 bg-pink-600 text-white rounded-lg hover:bg-white hover:border-2 hover:border-pink-600 hover:text-pink-800 transition-all ease-in">Audyy story</RouterLink> -->
 
       <!-- desktop -->
       <nav class="hidden md:flex gap-12">
